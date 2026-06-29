@@ -1,0 +1,29 @@
+{
+  "skill_name": "costly-signaling",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "People don't trust us because we're a new company. We keep saying 'trusted' and 'premium' but it isn't landing. What actually builds trust?",
+      "expected_output": "Should explain that cheap claims ('trusted', 'premium') carry no signal, and that credibility comes from costly, hard-to-fake actions. Should propose specific costly signals: a strong guarantee/warranty, visible sustained presence, demonstrable effort/over-delivery, real expertise on display. Should mention the Pratfall Effect (admit one real flaw to gain trust). Should require the signals be honest.",
+      "assertions": [
+        "Explains why cheap claims carry no signal",
+        "Proposes concrete costly signals (guarantee, presence, over-delivery)",
+        "Mentions the Pratfall Effect / honest flaw",
+        "Requires signals to be honest / tied to reality"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Should we lower our price to compete, or is there a case for charging more?",
+      "expected_output": "Should raise price-as-signal (Veblen goods / expensive placebo): for trust or desirability problems a higher price plus costlier presentation can outperform a discount, and cutting price can destroy the signal. Should recommend testing it rather than assuming, pointing to counterintuitive-tests. Should not assume cheaper always wins.",
+      "assertions": [
+        "Raises price-as-quality-signal (Veblen / expensive placebo)",
+        "Warns that discounting can destroy the signal",
+        "Recommends testing the higher price behaviourally",
+        "Does not assume cheaper wins"
+      ],
+      "files": []
+    }
+  ]
+}

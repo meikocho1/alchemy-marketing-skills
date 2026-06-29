@@ -1,0 +1,28 @@
+{
+  "skill_name": "counterintuitive-tests",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We're stuck — every idea we have is the same as our competitors'. Give us genuinely different angles and tell us how we'd know if they work.",
+      "expected_output": "Should write down the obvious/competitor move, then deliberately invert it (charge more, offer less, slower-but-nicer, hide the price, add friction, remove a feature) and keep the plausible inversions. Should then design cheap, reversible behavioural experiments (A/B, soft launch, fake-door) with a behavioural metric defined up front. Should warn against trusting surveys/focus groups (stated vs revealed preference).",
+      "assertions": [
+        "Writes the obvious move, then inverts it on purpose",
+        "Generates plausible counterintuitive options",
+        "Designs cheap reversible experiments with a pre-defined behavioural metric",
+        "Warns against surveys/focus groups (revealed > stated preference)"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Our survey said customers love the new idea. Should we just launch it?",
+      "expected_output": "Should caution that stated preference is cheap talk — people don't do what they say. Should recommend exposing people to the idea and measuring behaviour (a small reversible test) before a full launch, rather than trusting the survey. Should cite revealed preference.",
+      "assertions": [
+        "Cautions that survey approval is not behaviour",
+        "Recommends a small reversible behavioural test before full launch",
+        "References revealed vs stated preference"
+      ],
+      "files": []
+    }
+  ]
+}

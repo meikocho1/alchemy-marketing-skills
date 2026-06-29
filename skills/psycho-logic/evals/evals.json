@@ -1,0 +1,30 @@
+{
+  "skill_name": "psycho-logic",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Our SaaS is genuinely good but conversions are flat. Everyone says we should cut the price or add more features. What should we do?",
+      "expected_output": "Should restate the problem in human terms rather than as a price/feature metric. Should name the 'logical' fix (cut price / add features) and flag it as the expensive, saturated, competitor-default path. Should stay in the psychology lever and route to a specific sub-skill (reframing if the value isn't understood, costly-signaling if trust is the issue, counterintuitive-tests to validate). Should resist immediately recommending a discount. Should reference the idea that the perception is cheaper to change than the substance.",
+      "assertions": [
+        "Reframes the problem in human/perceptual terms",
+        "Identifies the logical fix and treats it as a trap, not the answer",
+        "Routes to a specific sub-skill (reframing / costly-signaling / counterintuitive-tests / experience-design)",
+        "Does not default to cutting price or adding features",
+        "References psycho-logic principles (perception over metric)"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "how do we make people actually want this? it doesn't make sense but our weird competitor is winning",
+      "expected_output": "Should trigger on casual phrasing. Should invoke 'the opposite of a good idea can be a good idea' and 'doesn't have to make sense to work.' Should diagnose in human terms and route — likely to counterintuitive-tests and/or costly-signaling. Should encourage a cheap behavioural test over reasoning about it.",
+      "assertions": [
+        "Triggers on casual, illogical-framed phrasing",
+        "Invokes the core thesis (opposite of a good idea / doesn't have to make sense)",
+        "Routes to an appropriate sub-skill",
+        "Favors a cheap behavioural test over pure reasoning"
+      ],
+      "files": []
+    }
+  ]
+}

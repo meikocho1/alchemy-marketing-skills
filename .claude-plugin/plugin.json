@@ -1,0 +1,13 @@
+{
+  "name": "alchemy-marketing",
+  "description": "Rory Sutherland's psycho-logic as Claude skills — solve the human perception, not just the engineering or economic metric. A router skill plus reframing, costly-signaling, counterintuitive-tests, and experience-design.",
+  "version": "1.0.0",
+  "author": {
+    "name": "meiko.cho",
+    "url": "https://github.com/meikocho1"
+  },
+  "homepage": "https://github.com/meikocho1/alchemy-marketing-skills",
+  "repository": "https://github.com/meikocho1/alchemy-marketing-skills",
+  "license": "MIT",
+  "skills": "./skills"
+}

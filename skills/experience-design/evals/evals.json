@@ -1,0 +1,29 @@
+{
+  "skill_name": "experience-design",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We get tons of complaints about wait times for our support callback. We're considering hiring more staff to cut the wait. Anything cheaper?",
+      "expected_output": "Should distinguish the metric (wait length) from the experience (anxiety of waiting blind). Should attack uncertainty first: give an ETA, queue position, or a guaranteed callback time, and acknowledge receipt immediately. Should mention occupied vs idle time and cite the Uber-map / status-visibility pattern. Should contrast the cheap feeling-fix against the expensive headcount-fix.",
+      "assertions": [
+        "Separates the metric (wait length) from the felt experience (uncertainty/anxiety)",
+        "Recommends reducing uncertainty (ETA, queue position, callback time) before adding staff",
+        "References occupied-vs-idle time or the Uber-map/status pattern",
+        "Contrasts cheap feeling-fix vs expensive headcount-fix"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Our onboarding is technically fast but people still drop off and say it feels tedious. What do we change?",
+      "expected_output": "Should map the journey by emotion, not steps. Should add progress visibility (progress bar, 'almost there'), occupy idle moments, and engineer a peak plus a strong ending (peak-end rule). Should not focus solely on reducing the number of steps.",
+      "assertions": [
+        "Maps the journey by emotion rather than step count",
+        "Adds progress visibility and occupies idle time",
+        "Applies the peak-end rule (engineer a peak and a strong finish)",
+        "Does not reduce the experience to step-count alone"
+      ],
+      "files": []
+    }
+  ]
+}

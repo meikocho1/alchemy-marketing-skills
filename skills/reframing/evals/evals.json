@@ -1,0 +1,30 @@
+{
+  "skill_name": "reframing",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Our $30/month tool keeps getting called expensive, but we can't afford to drop the price. How do we make it feel worth it?",
+      "expected_output": "Should reach for reframing rather than a substance change. Should apply mental accounting (e.g. '$1/day', 'less than X you already buy', 'cheaper than hiring someone'). Should consider re-anchoring against a more expensive comparison and recategorising the product. Should keep reframes honest. Should contrast the near-free reversible reframe against the expensive permanent discount.",
+      "assertions": [
+        "Chooses reframing over cutting the price",
+        "Applies mental accounting / cost re-pocketing",
+        "Considers re-anchoring or recategorising",
+        "Keeps the reframe honest",
+        "Contrasts cheap reframe vs expensive substance change"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "this product is fine but it just feels generic and cheap. how do we reposition it?",
+      "expected_output": "Should identify the current frame (category, comparison, mental account) making it feel cheap. Should propose renaming/recategorising so it competes against pricier things, and changing the anchor next to it. May cite Diamond Shreddies or Frederick's potato as patterns. Should not propose rebuilding the product.",
+      "assertions": [
+        "Names the current frame causing the 'cheap' perception",
+        "Proposes rename / recategorise / re-anchor moves",
+        "Cites a canonical reframing pattern",
+        "Avoids recommending a product rebuild"
+      ],
+      "files": []
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "alchemy-marketing-skills",
+  "owner": {
+    "name": "meiko.cho",
+    "url": "https://github.com/meikocho1"
+  },
+  "metadata": {
+    "description": "Rory Sutherland's psycho-logic for marketing, as Claude skills.",
+    "version": "1.0.0",
+    "repository": "https://github.com/meikocho1/alchemy-marketing-skills"
+  },
+  "plugins": [
+    {
+      "name": "alchemy-marketing",
+      "description": "5 skills that apply Rory Sutherland's psycho-logic to marketing and product problems: psycho-logic (the router — solve the perception, not the metric), reframing (change the meaning before the substance), costly-signaling (why expensive/wasteful/honest signals build trust), counterintuitive-tests (invert the obvious and validate cheaply), and experience-design (fix the felt moment, not the number).",
+      "source": "./"
+    }
+  ]
+}
