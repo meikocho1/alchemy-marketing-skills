@@ -2,7 +2,7 @@
 name: counterintuitive-tests
 description: "Generate ideas that don't sound logical, then validate them with cheap behavioural experiments — Rory Sutherland's 'the opposite of a good idea can be a good idea' plus revealed-preference testing. Use when the obvious/logical solution is saturated and the user wants genuinely different options, asks 'what's a creative/unconventional angle', 'how do we stand out', 'should we run a test/experiment', 'how do we know what people actually want', or is about to trust a survey/focus group. Covers deliberate inversion of the obvious move, why stated preferences lie, and designing small reversible experiments that watch behaviour. Inspired by Rory Sutherland's *Alchemy*. Routed to from psycho-logic."
 metadata:
-  version: 1.0.0
+  version: 1.1.0
 ---
 
 # Counterintuitive Tests — invert the obvious, then watch behaviour
@@ -44,8 +44,13 @@ Surveys and focus groups capture *post-hoc rationalisations*, not causes. Nobody
 - 「値上げしたら売れなくなりそう」→ 直感で却下せず、1セグメント・期間限定の**可逆なA/B**で行動を見る。論理ではなく結果に判断させる。
 - 葬儀/シニア領域：「分かりやすさ＝情報を増やす、が定石」→ 逆に**選択肢と情報を削る**版を作り、問い合わせ完了率で比較する。
 
+## Adapt to the region
+
+What counts as "the obvious move" is itself local — the saturated best-practice in one market can be the untried inversion in another. And this is where the research layer's *hypotheses* get resolved: cultural dials and recon give you educated guesses about a new market, but a stereotype is still just cheap talk. Turn each into a cheap, reversible behavioural test in that market rather than betting on the assumption. 日本語：市場ごとに"当たり前"が違う。cultural-context / market-recon の仮説は断定せず、その市場での可逆な行動実験で確かめる。
+
 ## Related skills
 
+- **cultural-context / market-recon** — supply the market hypotheses this skill validates by behaviour
 - **psycho-logic** — the router; use it to decide which obvious move to invert
 - **reframing** / **costly-signaling** — common sources of the counterintuitive idea you'll test
 - **experience-design** — many counterintuitive wins are journey changes; test them the same way

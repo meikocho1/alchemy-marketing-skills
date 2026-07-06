@@ -2,7 +2,7 @@
 name: costly-signaling
 description: "Why expensive, wasteful, effortful, or self-deprecating actions build trust and desire — Rory Sutherland on signalling. Use when the problem is credibility or desirability rather than meaning: the user asks 'why don't people trust us', 'how do we look more credible/committed/premium', 'is our guarantee/warranty worth it', 'should we spend on brand advertising', 'how do we justify a higher price', or wonders why a cheaper-looking competitor wins. Covers costly signals (advertising spend, guarantees, over-delivery), price-as-quality-signal (Veblen goods), and the Pratfall Effect (admitting a real flaw to gain trust). Inspired by Rory Sutherland's *Alchemy*. Routed to from psycho-logic."
 metadata:
-  version: 1.0.0
+  version: 1.1.0
 ---
 
 # Costly Signaling — trust is bought with waste
@@ -40,8 +40,13 @@ Admitting a real weakness is a costly, hard-to-fake move — so it reads as hone
 - 「完璧に良く見せたいのに刺さらない」→ **プラットフォール効果**。本当の弱点を1つ正直に開示すると、残りの主張全部の信頼が上がる。
 - 葬儀/シニア領域：「安心してもらいたい」→ "安心です" と言う（安い主張）のではなく、**追加料金ゼロの明朗会計・返金保証・24時間必ず人が出る** など "嘘つきには払えないコスト" を提示する。
 
+## Adapt to the region
+
+Trust has a local address. Where credibility comes from — institutions and certifications, personal introductions, or peer reviews — and whether status signals attract or repel differs by market, so aim the costly signal at *this* market's source of trust. A guarantee can read as "confident" or as "desperate" depending on uncertainty-avoidance norms. Pull the local trust locus from **cultural-context** and the signals competitors actually use from **market-recon** before choosing your signal. 日本語：信頼の源（資格・紹介・地域評判・レビュー）は市場で違う。効くシグナルはその土地の信頼の所在に合わせる。
+
 ## Related skills
 
+- **cultural-context / market-recon** — find the local trust locus before choosing your signal
 - **psycho-logic** — the router; confirm trust/desire (not meaning) is the real problem
 - **reframing** — if the issue is meaning rather than credibility, change the frame instead
 - **counterintuitive-tests** — test price-as-signal and pratfall copy before rolling out

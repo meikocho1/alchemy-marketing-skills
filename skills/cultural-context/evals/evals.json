@@ -1,0 +1,31 @@
+{
+  "skill_name": "cultural-context",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Our US campaign crushed it. We're now rolling the exact same messaging and guarantees out in Japan and Germany. Anything to watch for?",
+      "expected_output": "Should warn that the method transfers but the content of 'premium/trust/safe' does not, so the same move can mean the opposite. Should name relevant cultural dials (high- vs low-context communication, uncertainty avoidance, trust locus, price norms) and show how they rewire the specific messaging/guarantee. Should route to market-recon for live local data and to counterintuitive-tests to validate before rollout, rather than reasoning from stereotype.",
+      "assertions": [
+        "Says psychology/perception is not portable; re-derive content per market",
+        "Names specific cultural dimensions that bend the moves",
+        "Applies a dimension concretely to the messaging or guarantee",
+        "Routes to market-recon and/or counterintuitive-tests to verify",
+        "Warns against applying stereotypes as verdicts"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "We want to expand our funeral service to a new region. Should we lead with our low-price, discount-focused angle like we do at home?",
+      "expected_output": "Should flag taboo/sacredness as a hard constraint in the funeral context and warn that discount/price-led framing can read as disrespectful or 'cutting corners' depending on the market. Should stress defining the market narrowly (region within country, not just 'the country') and note regional custom differences. Should re-aim toward the local trust locus and reassurance norms, and hand off to market-recon / the move skills.",
+      "assertions": [
+        "Treats taboo/sacredness as a veto, not an optimisable dial",
+        "Warns price/discount framing may read as disrespect locally",
+        "Defines the market at region/segment granularity, not just country",
+        "Redirects to local trust locus / reassurance instead of price",
+        "Hands off to market-recon or the move skills for follow-through"
+      ],
+      "files": []
+    }
+  ]
+}

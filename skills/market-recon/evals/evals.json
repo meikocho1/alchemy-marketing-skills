@@ -1,0 +1,31 @@
+{
+  "skill_name": "market-recon",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We're launching in Thailand next quarter. What do buyers there actually expect, and how do local competitors position themselves?",
+      "expected_output": "Should refuse to answer from a stale training-data stereotype and instead run structured, local-language web research (WebSearch/WebFetch): local players and positioning, real price band and how price is shown, trust signals in use, where buyers check trust, category conventions/taboos, felt-moment complaints, and native terminology. Should synthesise a compact sourced perception profile with recency stamps, not a link dump, and route open hypotheses to counterintuitive-tests.",
+      "assertions": [
+        "Rejects reasoning from stereotype; gathers live data",
+        "Searches local-language / local sources, not just English summaries",
+        "Covers the recon checklist (players, price, trust signals, taboos, pains, terms)",
+        "Outputs a synthesised perception profile with sources/recency",
+        "Routes remaining hypotheses to counterintuitive-tests"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I keep saying we can't differentiate from competitors, but honestly I'm guessing about what they even do. Help.",
+      "expected_output": "Should treat this as a recon gap: inventory what local competitors actually signal (positioning, price framing, guarantees, trust proof) via web research before proposing differentiation. Should look for the empty position no one occupies, then hand the sourced profile to reframing / costly-signaling. Should pull cultural-context hypotheses first so recon targets the right dials.",
+      "assertions": [
+        "Recognises the differentiation claim is a guess and grounds it in recon",
+        "Inventories competitors' actual signals via web research",
+        "Looks for an unoccupied position from the real data",
+        "Runs cultural-context first to target the recon",
+        "Hands the profile to reframing / costly-signaling"
+      ],
+      "files": []
+    }
+  ]
+}

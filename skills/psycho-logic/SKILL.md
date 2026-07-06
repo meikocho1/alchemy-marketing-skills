@@ -2,7 +2,7 @@
 name: psycho-logic
 description: "Rory Sutherland's 'psycho-logic' approach to marketing, product, and business problems — solve the human perception, not just the engineering or economic metric. Use when the obvious 'logical' fix is expensive, slow, or already done by every competitor; when the user asks 'how do we make people want X', 'the product/price/funnel is fine but nobody converts', 'how do we stand out', 'is there a cheaper way to fix this', or mentions behavioral economics, nudges, irrational behavior, perception, or 'it doesn't make sense but it works'. This is the ROUTER skill: it diagnoses the problem in human terms, then dispatches to reframing (change the meaning), costly-signaling (build trust and desire), counterintuitive-tests (invert the obvious and test it cheaply), or experience-design (fix the felt moment). Inspired by Rory Sutherland's book *Alchemy*. For a catalogue of individual biases, use marketing-psychology instead."
 metadata:
-  version: 1.0.0
+  version: 1.1.0
 ---
 
 # Psycho-Logic
@@ -23,8 +23,9 @@ Three things to internalise:
 
 ## How to use this skill (the diagnostic loop)
 
-Work through these in order. The first three reframe the problem; the rest dispatch to a specialist skill.
+Work through these in order. Step 0 grounds the problem in a place; the next three reframe it; the rest dispatch to a specialist skill.
 
+0. **Establish who and where (the research layer).** Perception is culturally coded, so a move that works in one market can mean the opposite in another. Before diagnosing, fix the market — country, region, urban/rural, generation, segment — and establish its local perception rules. Use **cultural-context** for the lens (which cultural dials bend your moves) and **market-recon** to go look at the actual local players, prices, and trust signals now rather than reasoning from a stereotype. Everything below runs on *this* market's reality, not a generic one.
 1. **State the problem in human terms.** Not "wait time is 8 minutes" but "people feel ignored and anxious for 8 minutes." Not "price is too high" but "the price feels unjustified." The human framing is where the cheap solutions hide.
 2. **Write down the logical solution — then assume it's a trap.** What would every competitor do? (Make it faster / cheaper / add a feature.) That path is expensive and crowded. Note it, then deliberately look elsewhere.
 3. **Pick the lever.** Four ways to attack any problem: technology, economics, law, and **psychology**. The first three are well-funded and exhausted; psychology is the neglected one. Stay in psychology.
@@ -52,9 +53,12 @@ Your output should always make the user notice the gap between the expensive met
 - 「待ち時間のクレームが多い。人員を増やすべき？」→ 総待ち時間（高い解）ではなく**不確実性と手持ち無沙汰**（安い解）を疑う。experience-design へ。
 - 「競合と横並びで差別化できない」→ 論理的な差別化は全員が辿り着いている。counterintuitive-tests で "普通は悪手とされる手" を1つ挙げ、安く検証する。
 - 葬儀/シニア領域の例：「価格の安さを訴求しても響かない」→ シニアにとっての本当の問題は "失敗したくない/恥をかきたくない不安"。安さではなく**安心の知覚**を設計し直す（experience-design ＋ costly-signaling）。
+- 「他の地域/国で同じ施策を展開したい」→ まず **Step 0**。知覚は文化で決まるので、同じ打ち手が逆の意味になり得る。cultural-context で"効くダイヤル"を、market-recon で現地の実態（競合・相場・信頼の所在）を押さえてから、下の4手法に渡す。
 
 ## Related skills
 
+- **cultural-context** — Step 0's lens: how a specific region/culture reads a signal before you send it
+- **market-recon** — Step 0's fieldwork: live, sourced research of the actual target market
 - **reframing** — change the meaning before changing the substance (the cheapest lever)
 - **costly-signaling** — why expensive, wasteful, or honest signals build trust and desire
 - **counterintuitive-tests** — invert the obvious and validate with cheap behavioural experiments
