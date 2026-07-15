@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "Rory Sutherland's psycho-logic for marketing, as Claude skills.",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "repository": "https://github.com/meikocho1/alchemy-marketing-skills"
   },
   "plugins": [

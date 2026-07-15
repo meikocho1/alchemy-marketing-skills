@@ -1,8 +1,8 @@
 ---
 name: reframing
-description: "Change what something MEANS before you change what it IS — Rory Sutherland's cheapest lever. Use when a product, price, feature, or message is objectively fine but feels cheap, generic, boring, overpriced, or unjustified; when the user says 'how do we make this feel more premium/valuable/exciting', 'people don't get why it's worth it', 'how do we reposition/rename/repackage this', or wants to raise perceived value without changing the product or cutting the price. Covers renaming, recategorising, mental accounting (price framing), creating artificial value, and context-shifting. Inspired by Rory Sutherland's *Alchemy*. Routed to from psycho-logic."
+description: "Change what something MEANS before you change what it IS — Rory Sutherland's cheapest lever. Use when a product, price, feature, or message is objectively fine but feels cheap, generic, boring, overpriced, or unjustified; when the user says 'how do we make this feel more premium/valuable/exciting', 'people don't get why it's worth it', 'how do we reposition/rename/repackage this', or wants to raise perceived value without changing the product or cutting the price. Covers renaming, recategorising, mental accounting (price framing), creating artificial value, and context-shifting. Inspired by Rory Sutherland's *Alchemy*. Routed to from psycho-logic. 日本語の相談（「高いと言われる」「安っぽく見える」「値下げせずに高級感を出したい」）にも使う。中文咨询（“被说太贵”“显得廉价”“不降价也想显得高级”）也适用。"
 metadata:
-  version: 1.1.0
+  version: 1.2.0
 ---
 
 # Reframing — change the meaning, not the substance
@@ -42,14 +42,18 @@ A thing has no fixed value; value is assigned by context and comparison. Move th
 - 「月額3万円が高いと言われる」→ 値下げ（高い解）の前に**メンタルアカウンティング**で言い換え："1日あたり約1,000円"、"スタッフ1人雇うより安い" など、落とす財布を変える。
 - 葬儀/シニア領域：「"低価格" を全面に出すと逆に不安がられる」→ フレームを "安い" から "明朗・追加費用ゼロの安心" へ。価格そのものではなく、価格が置かれている意味（不安 vs 安心）を作り直す。
 
-## Adapt to the region
+## Cross-check against the canon
 
-Frames are read in a local language. Which category means "premium," which price framing (round vs .99, per-day vs all-in) signals quality, and which comparison flatters all differ by market — a reframe that lifts value in one place can cheapen it in another. Before committing a frame for a new region, pull the local reading from **cultural-context** (the lens) and **market-recon** (the live data). 日本語：同じ言い換えでも "高級/安っぽい" の意味は地域・国で変わる。新しい市場では現地の知覚を確認してからフレームを決める。
+Sanity-check any reframe against these; if it contradicts one, name the contradiction and justify it. When a claim is load-bearing or the user asks for evidence or fresh examples, web-search the named theory or case and cite what you find.
+
+- **Kahneman & Tversky, prospect theory / framing effect** — losses loom roughly twice as large as gains; decide whether the frame should present a gain or an avoided loss.
+- **Richard Thaler, mental accounting** — every price lands in a mental pocket; a good reframe names which pocket it moves the cost into.
+- **Al Ries & Jack Trout, *Positioning*** — the frame lives in the prospect's mind, not in your copy; reframe relative to what's already there.
+- **Cialdini's contrast principle** — whatever sits next to the thing sets its value; check what the new frame makes the customer compare it against.
 
 ## Related skills
 
-- **cultural-context / market-recon** — localise the frame before you ship it to a new market
 - **psycho-logic** — the router; start there to confirm reframing is the right lever
 - **costly-signaling** — when the problem is trust/desire rather than meaning, send a signal instead
 - **counterintuitive-tests** — validate a reframe cheaply before committing
-- **marketing-psychology** — anchoring, framing effect, mental accounting, contrast effect in detail
+- **marketing-psychology** — anchoring, framing effect, mental accounting, contrast effect in detail (separate plugin — only if installed)

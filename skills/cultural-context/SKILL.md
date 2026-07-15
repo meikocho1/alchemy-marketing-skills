@@ -1,8 +1,8 @@
 ---
 name: cultural-context
-description: "The perception-by-culture lens for psycho-logic — establish HOW a specific region, country, or subculture reads a signal before you send it, because perception is culturally coded and the same move can mean the opposite elsewhere. Use when adapting a product, price, message, or campaign to a new market; when the user asks 'will this work in [country/region]', 'why does this land in X but flop in Y', 'how do people here perceive Z', 'how do we localise/differentiate by region', or is about to copy a US/global playbook into another market. Covers the cultural dimensions that move Sutherland's levers — uncertainty avoidance, individualism/collectivism, status/power distance, high- vs low-context communication, mental-accounting norms, trust locus, and taboo/sacredness — and how each rewires reframing, costly-signaling, and experience-design. Inspired by Rory Sutherland's *Alchemy*. Routed to from psycho-logic; pair with market-recon for live local data."
+description: "The perception-by-culture lens for psycho-logic — establish HOW a specific region, country, or subculture reads a signal before you send it, because perception is culturally coded and the same move can mean the opposite elsewhere. Use when adapting a product, price, message, or campaign to a new market; when the user asks 'will this work in [country/region]', 'why does this land in X but flop in Y', 'how do people here perceive Z', 'how do we localise/differentiate by region', or is about to copy a US/global playbook into another market. Covers the cultural dimensions that move Sutherland's levers — uncertainty avoidance, individualism/collectivism, status/power distance, high- vs low-context communication, mental-accounting norms, trust locus, and taboo/sacredness — and how each rewires reframing, costly-signaling, and experience-design. Inspired by Rory Sutherland's *Alchemy*. Routed to from psycho-logic; pair with market-recon for live local data. 日本語・中文の相談（「この地域で通用する？」「适合本地市场吗？」）にも使う。"
 metadata:
-  version: 1.1.0
+  version: 1.2.0
 ---
 
 # Cultural Context — perception is coded by where you are
@@ -39,6 +39,15 @@ Treat these as hypotheses about the target market — dials, not verdicts. For e
 - 「値下げで攻めれば地方でも勝てるはず」→ **価格の意味は非携帯**。地域や世代によって "安い＝手抜き/失礼" と読まれる。安さを出す前に、その市場での価格の読まれ方を確認。
 - 「レビュー星の数を前面に出す」→ **信頼の所在**が市場で違う。紹介・地域の評判・寺や医師の推薦が効く層に、他人のレビューは刺さらないことがある。シグナルは"その土地の信頼の源"に向ける。
 - 葬儀/シニア領域：**タブー/神聖さ**が最優先の制約。割引・カジュアル化・スピード訴求は文脈次第で不謹慎に転ぶ。さらに関東/関西で葬送慣習（骨上げ・通夜の位置づけ等）が異なるため、「日本」ではなく地域単位で知覚ルールを立ててから reframing / costly-signaling / experience-design に渡す。
+
+## Cross-check against the canon
+
+Sanity-check any cultural read against these; if it contradicts one, name the contradiction and justify it. When a claim is load-bearing or the user asks for evidence or fresh examples, web-search the named theory or case and cite what you find.
+
+- **Geert Hofstede, cultural dimensions** — the source of the uncertainty-avoidance / individualism / power-distance dials; use his country scores as a first hypothesis, never a verdict.
+- **Edward T. Hall, high- vs low-context communication** — the original framework behind "what's left unsaid" cultures.
+- **Erin Meyer, *The Culture Map*** — the practitioner's update: the *relative* position between two cultures matters more than either one's absolute score.
+- **The ecological-fallacy caveat (McSweeney's critique of Hofstede)** — dimension scores are country-level averages; applying them to an individual buyer or a subculture is a statistical error. That's exactly why market-recon exists.
 
 ## Related skills
 

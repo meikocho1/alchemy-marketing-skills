@@ -1,8 +1,8 @@
 ---
 name: experience-design
-description: "Fix the psychologically significant moment, not the logically significant metric — Rory Sutherland on experience. Use when the outcome is fine but the journey feels bad: complaints about waiting, anxiety, uncertainty, or 'it's technically fast/cheap/correct but people still hate it'; when the user asks 'how do we reduce complaints', 'how do we make waiting/onboarding/checkout feel better', 'people are anxious during X', or is about to spend big to shave a number (wait time, load time, steps) when the real pain is how the moment feels. Covers uncertainty reduction, idle vs occupied waiting, and the peak-end rule. Inspired by Rory Sutherland's *Alchemy*. Routed to from psycho-logic."
+description: "Fix the psychologically significant moment, not the logically significant metric — Rory Sutherland on experience. Use when the outcome is fine but the journey feels bad: complaints about waiting, anxiety, uncertainty, or 'it's technically fast/cheap/correct but people still hate it'; when the user asks 'how do we reduce complaints', 'how do we make waiting/onboarding/checkout feel better', 'people are anxious during X', or is about to spend big to shave a number (wait time, load time, steps) when the real pain is how the moment feels. Covers uncertainty reduction, idle vs occupied waiting, and the peak-end rule. Inspired by Rory Sutherland's *Alchemy*. Routed to from psycho-logic. 日本語の相談（「待ち時間のクレームが多い」「手続きの途中で離脱される」「お客様を不安にさせている」）にも使う。中文咨询（“等待时间投诉多”“办理中途流失”“让客户感到不安”）也适用。"
 metadata:
-  version: 1.1.0
+  version: 1.2.0
 ---
 
 # Experience Design — fix the felt moment, not the metric
@@ -38,14 +38,18 @@ The number ("8 minute wait," "3 second load," "5 form fields") is not the experi
 - 「サービス自体は良いのに記憶に残らない」→ **ピーク・エンドの法則**。途中の平均を上げるより、ひとつ強い感動の山と、良い締め（お礼・確認）を設計する。
 - 葬儀/シニア領域：「電話がつながるまで不安にさせている」→ 総待ち時間ではなく**"必ず人が出る/折り返す時刻を伝える"** で不確実性を消す。式当日も "次は何をするか" を都度伝えるだけで不安が大きく減る。
 
-## Adapt to the region
+## Cross-check against the canon
 
-Which moment feels anxious, and how much reassurance soothes it, is culturally set. High uncertainty-avoidance markets want more explicit status, ETAs, and confirmation at each step; others find the same hand-holding patronising. What reads as a respectful, delightful peak in one culture can read as excessive or even taboo in another (especially around death, health, and money). Map the journey's *felt* moments with the local reading from **cultural-context**, and mine real local complaints via **market-recon**. 日本語：どの瞬間が不安か、どれだけの安心が要るかは文化で変わる。現地の読み方（cultural-context）と実際の不満（market-recon）で体感の設計を合わせる。
+Sanity-check any journey fix against these; if it contradicts one, name the contradiction and justify it. When a claim is load-bearing or the user asks for evidence or fresh examples, web-search the named theory or case and cite what you find.
+
+- **Daniel Kahneman, peak-end rule** — validated in Redelmeier's colonoscopy studies: people remember the peak and the end, not the duration or the average.
+- **David Maister, "The Psychology of Waiting Lines"** — the canonical waiting principles: uncertain, unexplained, unoccupied, and unfair waits feel longest.
+- **Don Norman, *The Design of Everyday Things*** — visibility of system status and immediate feedback are the design mechanics behind "kill the uncertainty".
+- **Thaler & Sunstein, *Nudge*** — choice architecture: the journey's defaults and framing steer behaviour more than instructions do.
 
 ## Related skills
 
-- **cultural-context / market-recon** — localise which moments feel bad and how much reassurance fits
 - **psycho-logic** — the router; confirm the problem is the journey, not the outcome
 - **counterintuitive-tests** — most experience fixes (e.g. the longer baggage walk) are counterintuitive; test them on behaviour
 - **reframing** — sometimes the felt moment is fixed by changing its meaning, not its design
-- **marketing-psychology** — peak-end rule, goal-gradient, Zeigarnik, friction in detail
+- **marketing-psychology** — peak-end rule, goal-gradient, Zeigarnik, friction in detail (separate plugin — only if installed)

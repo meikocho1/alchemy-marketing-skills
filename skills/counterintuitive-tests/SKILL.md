@@ -1,8 +1,8 @@
 ---
 name: counterintuitive-tests
-description: "Generate ideas that don't sound logical, then validate them with cheap behavioural experiments — Rory Sutherland's 'the opposite of a good idea can be a good idea' plus revealed-preference testing. Use when the obvious/logical solution is saturated and the user wants genuinely different options, asks 'what's a creative/unconventional angle', 'how do we stand out', 'should we run a test/experiment', 'how do we know what people actually want', or is about to trust a survey/focus group. Covers deliberate inversion of the obvious move, why stated preferences lie, and designing small reversible experiments that watch behaviour. Inspired by Rory Sutherland's *Alchemy*. Routed to from psycho-logic."
+description: "Generate ideas that don't sound logical, then validate them with cheap behavioural experiments — Rory Sutherland's 'the opposite of a good idea can be a good idea' plus revealed-preference testing. Use when the obvious/logical solution is saturated and the user wants genuinely different options, asks 'what's a creative/unconventional angle', 'how do we stand out', 'should we run a test/experiment', 'how do we know what people actually want', or is about to trust a survey/focus group. Covers deliberate inversion of the obvious move, why stated preferences lie, and designing small reversible experiments that watch behaviour. Inspired by Rory Sutherland's *Alchemy*. Routed to from psycho-logic. 日本語の相談（「競合と同じ案しか出ない」「アンケートは好評なのに売れない」「思い切った案を安く試したい」）にも使う。中文咨询（“只能想出和竞品一样的方案”“问卷好评却卖不动”）也适用。"
 metadata:
-  version: 1.1.0
+  version: 1.2.0
 ---
 
 # Counterintuitive Tests — invert the obvious, then watch behaviour
@@ -44,14 +44,18 @@ Surveys and focus groups capture *post-hoc rationalisations*, not causes. Nobody
 - 「値上げしたら売れなくなりそう」→ 直感で却下せず、1セグメント・期間限定の**可逆なA/B**で行動を見る。論理ではなく結果に判断させる。
 - 葬儀/シニア領域：「分かりやすさ＝情報を増やす、が定石」→ 逆に**選択肢と情報を削る**版を作り、問い合わせ完了率で比較する。
 
-## Adapt to the region
+## Cross-check against the canon
 
-What counts as "the obvious move" is itself local — the saturated best-practice in one market can be the untried inversion in another. And this is where the research layer's *hypotheses* get resolved: cultural dials and recon give you educated guesses about a new market, but a stereotype is still just cheap talk. Turn each into a cheap, reversible behavioural test in that market rather than betting on the assumption. 日本語：市場ごとに"当たり前"が違う。cultural-context / market-recon の仮説は断定せず、その市場での可逆な行動実験で確かめる。
+Sanity-check inversions and experiment designs against these; if one contradicts your plan, name it and justify the exception. When a claim is load-bearing or the user asks for evidence or fresh examples, web-search the named theory or case and cite what you find.
+
+- **Paul Samuelson, revealed preference** — the economics behind "watch what they do": choices, not statements, define preference.
+- **Barry Schwartz, *The Paradox of Choice*** — why "offer less" is a serious inversion, not a gimmick.
+- **Nassim Taleb, the barbell** — keep the core safe and make the experiments small and reversible; never bet the company on an inversion.
+- **Byron Sharp, *How Brands Grow*** — the empirical brake: some counterintuitive moves (e.g. abandoning reach to court loyalists) reliably fail in his data. Test against evidence, not just cleverness.
 
 ## Related skills
 
-- **cultural-context / market-recon** — supply the market hypotheses this skill validates by behaviour
 - **psycho-logic** — the router; use it to decide which obvious move to invert
 - **reframing** / **costly-signaling** — common sources of the counterintuitive idea you'll test
 - **experience-design** — many counterintuitive wins are journey changes; test them the same way
-- **ab-testing** / **marketing-psychology** — mechanics of running tests and the biases involved
+- **ab-testing** / **marketing-psychology** — mechanics of running tests and the biases involved (separate plugins — only if installed)

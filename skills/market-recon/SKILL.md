@@ -1,8 +1,8 @@
 ---
 name: market-recon
-description: "The live fieldwork layer for psycho-logic — go look at the actual target market NOW instead of reasoning from your training-data stereotype of it. Use when a psycho-logic move needs grounding in a specific place: the user asks 'what do competitors in [region/country] actually do', 'what's the real price band / norm here', 'how do local leaders position themselves', 'research this market before we localise', 'what signals trust to buyers in X', or is about to launch/adapt in a market you haven't studied. Runs structured web research in the local language — local competitors and their signals, price bands, category conventions, review/trust sources, local terminology, taboos and regulations — and synthesises a compact perception profile the four moves consume. Inspired by Rory Sutherland's *Alchemy*. Routed to from psycho-logic; pair with cultural-context (the lens that tells you what to look for)."
+description: "The live fieldwork layer for psycho-logic — go look at the actual target market NOW instead of reasoning from your training-data stereotype of it. Use when a psycho-logic move needs grounding in a specific place: the user asks 'what do competitors in [region/country] actually do', 'what's the real price band / norm here', 'how do local leaders position themselves', 'research this market before we localise', 'what signals trust to buyers in X', or is about to launch/adapt in a market you haven't studied. Runs structured web research in the local language — local competitors and their signals, price bands, category conventions, review/trust sources, local terminology, taboos and regulations — and synthesises a compact perception profile the four moves consume. Inspired by Rory Sutherland's *Alchemy*. Routed to from psycho-logic; pair with cultural-context (the lens that tells you what to look for). 日本語・中文の相談（「現地の実態を調べて」「调研当地市场」）にも使う。"
 metadata:
-  version: 1.1.0
+  version: 1.2.0
 ---
 
 # Market Recon — go look, don't assume
@@ -43,6 +43,14 @@ Aim each search at a lever the moves will pull:
 - 「競合と横並びで差別化できない」→ まず**実際の競合が何をシグナルしているか**を現地情報で棚卸し。空白のポジション（誰も出していない正直な弱点開示・全部込み価格など）が見えてから reframing / costly-signaling に渡す。
 - 「現地の相場観がわからない」→ 価格の"範囲"だけでなく**見せ方**（1日あたり/総額/段階/問い合わせまで非表示）まで調べる。価格フレームは市場ごとに違う。
 - 葬儀/シニア領域：関東/関西など**地域単位で慣習と相場が違う**。地域の葬儀社の打ち出し、口コミ・紹介・寺や地域評判といった信頼の所在、遺族の不満（journey の痛点）を現地ソースで集め、experience-design と costly-signaling の材料にする。タブー・法規制（表示や許認可）も必ず確認。
+
+## Cross-check against the canon
+
+Sanity-check recon findings against these; if one contradicts your read, name it and justify it.
+
+- **Paul Samuelson, revealed preference** — weight what local players *do* (their pages, prices, signals) over what anyone says about the market.
+- **Steve Blank, "get out of the building"** — the customer-development canon for the same instruction: facts live outside your assumptions.
+- **Kahneman, WYSIATI ("what you see is all there is")** — the bias this skill exists to counter: a confident market picture built from the few sources you happened to see. Stamp recency, cite sources, flag gaps.
 
 ## Related skills
 
