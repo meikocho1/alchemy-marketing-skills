@@ -26,6 +26,7 @@ The logical fix is usually expensive, slow, and already done by every competitor
 | **costly-signaling** | Why expensive, wasteful, effortful, or self-deprecating actions build trust and desire. Guarantees, brand spend, price-as-quality, and the Pratfall Effect (the honest flaw). |
 | **counterintuitive-tests** | "The opposite of a good idea can be a good idea." Generate ideas that don't sound logical, then validate them with cheap, reversible behavioural experiments — because people don't do what they say. |
 | **experience-design** | Fix the psychologically significant moment, not the logically significant metric. Uncertainty beats delay, occupied time beats idle time, peak-end beats average. |
+| **gameful-reframing** | Turn vague, avoided, or intimidating work into a capability-building path: clear missions, calibrated challenge, useful feedback, visible progress, agency, and safe failure — not empty points or addictive retention. |
 
 Each skill's body is in English and includes a **日本語の使用例** (Japanese usage examples) section. Skill descriptions carry Japanese and Chinese trigger phrases, so prompts in all three languages fire the right skill. Each skill also cross-checks its advice against the wider canon (Kahneman, Cialdini, Byron Sharp, Maister, …) and web-searches the named theory or case when you ask for evidence.
 
@@ -67,6 +68,7 @@ Psycho-logic is for making real things better and surfacing real value. Signals 
 | **costly-signaling** | なぜ高価・無駄・手間・自虐が信頼と欲求を生むのか。保証、ブランド広告費、価格＝品質シグナル、プラットフォール効果（正直な弱点）。 |
 | **counterintuitive-tests** | 「良いアイデアの逆もまた良いアイデアになりうる」。論理的に聞こえないアイデアを生成し、安く・元に戻せる行動実験で検証する — 人は言う通りには動かないから。 |
 | **experience-design** | 論理的に重要な「指標」ではなく、心理的に重要な「瞬間」を直す。不確実性＞遅延、手持ち無沙汰＞占有時間、平均＜ピーク・エンド。 |
+| **gameful-reframing** | 曖昧・退屈・不安な仕事を、能力を身につける道筋へ変える。明確なミッション、適度な挑戦、役立つフィードバック、見える進捗、選択権、安全な失敗を設計し、空虚なポイントや依存設計にしない。 |
 
 各スキルの本文は英語ですが、すべてのスキルに **日本語の使用例** セクションがあります（葬儀/シニア文脈の例を含む）。description には日本語・中国語のトリガー句が入っており、3言語どの相談でも発火します。また各スキルは提案を著名な理論（Kahneman、Cialdini、Byron Sharp、Maister ほか）と相互チェックし、根拠を求められれば Web 検索で出典を引きます。
 

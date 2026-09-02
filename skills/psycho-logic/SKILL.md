@@ -36,6 +36,7 @@ Work through these in order. The first three reframe the problem; the rest dispa
 | People don't *trust* or *desire* it; you look uncommitted | Send an expensive, hard-to-fake signal | **costly-signaling** |
 | The obvious answer is saturated; nobody really knows why people act | Invert the obvious and run a cheap behavioural test | **counterintuitive-tests** |
 | The *outcome* is fine but the *journey* feels bad (anxiety, waiting, uncertainty) | Redesign the felt moment, not the metric | **experience-design** |
+| People value the goal but do not start, persist, learn, or collaborate well | Turn the work into a capability-building path | **gameful-reframing** |
 
 5. **Prefer the reversible, cheap experiment over the report.** People don't say what they think or do what they say. Don't ask them — change something small and watch behaviour. (See counterintuitive-tests.)
 6. **Sanity-check the ethics.** Psycho-logic should make the real thing better or surface real value, not con people. Signals must be honest; scarcity and urgency must be true. A trick that doesn't survive the customer finding out is a liability, not a tactic.
@@ -68,4 +69,5 @@ Sanity-check recommendations against these before shipping; if your advice contr
 - **costly-signaling** — why expensive, wasteful, or honest signals build trust and desire
 - **counterintuitive-tests** — invert the obvious and validate with cheap behavioural experiments
 - **experience-design** — fix the psychologically significant moment, not the logically significant metric
+- **gameful-reframing** — turn avoided or intimidating work into clear missions, calibrated challenge, feedback, and real capability growth
 - **marketing-psychology** — flat catalogue of named biases, when you want the menu rather than the method (separate plugin — only if installed)

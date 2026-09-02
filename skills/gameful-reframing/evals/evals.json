@@ -1,0 +1,29 @@
+{
+  "skill_name": "gameful-reframing",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I have a new PM who needs to learn product discovery. How can I assign work so they grow instead of simply following my instructions?",
+      "expected_output": "Should identify a real capability to build and propose a progressive mission path such as problem framing, one user conversation, synthesis, hypothesis, review, and a limited experiment. Each mission should have a definition of done, feedback, and a safe increase in responsibility. It should not default to points or a leaderboard.",
+      "assertions": [
+        "Names a capability rather than only a task output",
+        "Creates a staged path with observable completion conditions",
+        "Includes feedback and progressively greater autonomy",
+        "Avoids superficial points, badges, or forced competition"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Our support team finds ticket triage boring. Should I introduce daily streaks and a public leaderboard?",
+      "expected_output": "Should not immediately endorse streaks or public rankings. It should diagnose whether boredom comes from repetition, lack of feedback, low authority, poor tooling, or unclear value, and suggest a meaningful challenge, feedback loop, capability progression, or structural fix. It should flag the risk that competition harms cooperation or creates gaming of the metric.",
+      "assertions": [
+        "Diagnoses before selecting a game mechanic",
+        "Considers structural and experience problems, not only motivation",
+        "Warns about leaderboard or streak risks",
+        "Proposes a real capability or outcome-based alternative"
+      ],
+      "files": []
+    }
+  ]
+}
