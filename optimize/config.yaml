@@ -1,0 +1,31 @@
+# SkillOpt settings shared by every skill. train.py adds _base_ (SkillOpt's
+# defaults) and passes skill_init, data_path and out_root per skill.
+model:
+  backend: claude_chat          # runs `claude -p` with the local Claude Code login
+  optimizer_backend: claude_chat
+  target_backend: claude_chat
+  optimizer: claude-sonnet-5    # proposes edits and judges assertions
+  target: claude-sonnet-5       # answers with the skill as system prompt
+
+env:
+  name: alchemy
+  split_mode: ratio
+  split_ratio: "2:1:1"          # 20 evals -> 10 train / 5 val / 5 test
+  workers: 4
+  max_completion_tokens: 4096
+
+train:
+  num_epochs: 2
+  batch_size: 10                # the whole train split per step
+
+gradient:
+  minibatch_size: 6
+  analyst_workers: 4
+
+optimizer:
+  learning_rate: 3              # max edits per step
+  min_learning_rate: 1
+  slow_update_samples: 10
+
+evaluation:
+  gate_metric: soft             # 5 val items: hard (all assertions) is too coarse

@@ -26,6 +26,8 @@ A thing has no fixed value; value is assigned by context and comparison. Move th
 
 ## How to apply
 
+0. **Gatekeep first.** Ask whether the problem is really about *meaning* (feels cheap/generic/overpriced) or about something else wearing that costume — most commonly *trust* ("they don't believe the claim"), which needs a costly signal, not a frame. If the claim itself is already believed and understood but just isn't landing as valuable, reframing is right; if people doubt the claim is even true, say so explicitly and hand off to `costly-signaling` instead of forcing a rename/anchor/re-pocket fix.
+
 1. **Name the current frame.** What category, comparison, and mental account is the thing sitting in right now? That's what's making it feel cheap/generic/expensive.
 2. **Decide the meaning you want** ("premium and considered," "the safe obvious choice," "an indulgence you deserve," "a tiny daily cost").
 3. **Pick the cheapest frame shift that gets there:**

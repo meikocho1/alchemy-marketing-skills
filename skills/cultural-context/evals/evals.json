@@ -4,12 +4,12 @@
     {
       "id": 1,
       "prompt": "Our US campaign crushed it. We're now rolling the exact same messaging and guarantees out in Japan and Germany. Anything to watch for?",
-      "expected_output": "Should warn that the method transfers but the content of 'premium/trust/safe' does not, so the same move can mean the opposite. Should name relevant cultural dials (high- vs low-context communication, uncertainty avoidance, trust locus, price norms) and show how they rewire the specific messaging/guarantee. Should route to market-recon for live local data and to counterintuitive-tests to validate before rollout, rather than reasoning from stereotype.",
+      "expected_output": "Should warn that the method transfers but the content of 'premium/trust/safe' does not, so the same move can mean the opposite. Should name relevant cultural dials (high- vs low-context communication, uncertainty avoidance, trust locus, price norms) and show how they rewire the specific messaging/guarantee. Should recommend validating with live local data and a small test before rollout (naming market-recon and/or counterintuitive-tests is fine but not required), rather than reasoning from stereotype.",
       "assertions": [
         "Says psychology/perception is not portable; re-derive content per market",
         "Names specific cultural dimensions that bend the moves",
         "Applies a dimension concretely to the messaging or guarantee",
-        "Routes to market-recon and/or counterintuitive-tests to verify",
+        "Recommends validating with live local data and/or a small test before rollout (naming market-recon or counterintuitive-tests is fine but not required)",
         "Warns against applying stereotypes as verdicts"
       ],
       "files": []
@@ -17,13 +17,231 @@
     {
       "id": 2,
       "prompt": "We want to expand our funeral service to a new region. Should we lead with our low-price, discount-focused angle like we do at home?",
-      "expected_output": "Should flag taboo/sacredness as a hard constraint in the funeral context and warn that discount/price-led framing can read as disrespectful or 'cutting corners' depending on the market. Should stress defining the market narrowly (region within country, not just 'the country') and note regional custom differences. Should re-aim toward the local trust locus and reassurance norms, and hand off to market-recon / the move skills.",
+      "expected_output": "Should flag taboo/sacredness as a hard constraint in the funeral context and warn that discount/price-led framing can read as disrespectful or 'cutting corners' depending on the market. Should stress defining the market narrowly (region within country, not just 'the country') and note regional custom differences. Should re-aim toward the local trust locus and reassurance norms, and suggest validating with live local data before rollout (naming market-recon / the move skills is fine but not required).",
       "assertions": [
         "Treats taboo/sacredness as a veto, not an optimisable dial",
         "Warns price/discount framing may read as disrespect locally",
         "Defines the market at region/segment granularity, not just country",
         "Redirects to local trust locus / reassurance instead of price",
-        "Hands off to market-recon or the move skills for follow-through"
+        "Suggests concrete next steps to validate the localized approach with live local data before rollout (naming market-recon or the move skills is fine but not required)"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "うちの家計簿アプリ、東京の20代向けに作った訴求をそのまま大阪の40代にも使う予定です。問題ありますか？",
+      "expected_output": "Should warn that reusing a message across generation and region within the same country is not automatically safe, name a relevant cultural dimension (e.g. individualism/collectivism or high/low-context) that could bend the message, treat the read as a hypothesis rather than a verdict, and recommend validating with live local data or a small test before rollout (naming market-recon or counterintuitive-tests is fine but not required).",
+      "assertions": [
+        "Notes that reuse across generation/region within one country still needs re-checking, not assumed safe",
+        "Names at least one relevant cultural dimension bending the message",
+        "Frames the dimension-based read as a hypothesis to validate, not a fixed verdict",
+        "Recommends validating with live local data and/or a small test before rollout (naming market-recon or counterintuitive-tests is fine but not required)",
+        "Defines the market at generation/region granularity rather than treating 'Tokyo' or 'Osaka' as monolithic"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Chinese consumers always want a discount — they love to haggle. Let's build our entire China GTM pricing strategy around aggressive bargaining culture.",
+      "expected_output": "Should push back on treating this stereotype as a settled fact, flag the ecological-fallacy-style risk of overgeneralizing a country-level trait, reframe it as one hypothesis among several dials rather than a foundation for the whole pricing strategy, and recommend validating with live local data before committing (naming market-recon is fine but not required).",
+      "assertions": [
+        "Pushes back on treating the claim as a settled fact or verdict",
+        "Explicitly flags the risk of stereotyping or overgeneralizing from a country-level average",
+        "Says dimension-based reads are hypotheses needing real local data, not a strategy foundation",
+        "Recommends validating with live local data before committing to the pricing strategy (naming market-recon is fine but not required)",
+        "Does not confidently affirm the stereotype as accurate"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "We're launching a luxury villa development in Dubai. Our home-market ads emphasize 'affordable luxury for everyone' — same message for UAE?",
+      "expected_output": "Should flag status/power-distance as the dial most likely to break the 'for everyone' framing, explain that democratizing luxury can undercut the exclusivity signal status-conscious buyers want, treat this as a hypothesis rather than fact, and recommend local validation before finalizing the messaging.",
+      "assertions": [
+        "Names status/power-distance as the relevant dimension",
+        "Explains that democratized/egalitarian framing can undercut desired exclusivity in a status-conscious market",
+        "Frames the read as a hypothesis to verify, not asserted fact",
+        "Recommends validating with live local data before finalizing the messaging (naming market-recon is fine but not required)"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Aurora Fit (a fictional DTC fitness gear brand) wants to launch in Brazil using our US 'individual achievement' hero copy: 'Your body, your rules, no one else's opinion matters.' Thoughts before we localize?",
+      "expected_output": "Should name individualism vs collectivism as the relevant dimension, suggest the lone-wolf framing may need reframing toward social/group belonging for a more collectivist audience, present this as a hypothesis rather than certainty, and recommend validating with live local data or a small test before committing (naming market-recon or counterintuitive-tests is fine but not required).",
+      "assertions": [
+        "Names individualism vs collectivism as the relevant dimension",
+        "Suggests the individual-defiance framing may need reframing toward social/group belonging",
+        "Notes this is a hypothesis to validate, not a certainty",
+        "Recommends validating with live local data and/or a small test before committing (naming market-recon or counterintuitive-tests is fine but not required)"
+      ],
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "終活サービスの体験設計で、関東と関西で同じ内容にしても大丈夫だと思いますか？",
+      "expected_output": "Should treat taboo/sacredness as a non-negotiable constraint in this domain, note that region within Japan (Kanto vs Kansai) matters more than the national label, recommend establishing perception rules per region before applying them to the experience design (naming experience-design is fine but not required), and flag specific regional custom claims as needing verification rather than asserted fact.",
+      "assertions": [
+        "Notes region-level differences within Japan matter, not just a national norm",
+        "Cites taboo/sacredness as a non-negotiable constraint in this domain",
+        "Advises establishing perception rules per region before applying them to the experience design (naming experience-design is fine but not required)",
+        "Frames regional custom claims as needing verification rather than asserted as certain fact"
+      ],
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "Give me actual current competitor pricing and real customer reviews for skincare brands in Brazil right now.",
+      "expected_output": "Should recognize this is a request for live, sourced local market data rather than cultural hypotheses, point to that need instead of offering cultural dials (naming market-recon is fine but not required), and avoid fabricating specific current prices or reviews as if verified.",
+      "assertions": [
+        "Recognizes the request is for live/sourced market data rather than cultural hypotheses",
+        "Points to getting live, sourced local market data instead of relying on cultural dials/hypotheses (naming market-recon is fine but not required)",
+        "Does not fabricate specific current prices or reviews as if verified fact",
+        "Distinguishes its own role (cultural perception dials/hypotheses) from the separate need for live, sourced field data"
+      ],
+      "files": []
+    },
+    {
+      "id": 9,
+      "prompt": "Selling industrial sensor systems to German manufacturers. Our US pitch leans on a bold 'ship in 48 hours, figure out details later' vibe. Good fit for DACH?",
+      "expected_output": "Should name uncertainty avoidance as the relevant dimension, explain that the fast/loose pitch likely undercuts trust in a high-uncertainty-avoidance market, suggest re-anchoring on documentation, credentials, and precedent, and flag this as a hypothesis to confirm with live local data (naming market-recon is fine but not required).",
+      "assertions": [
+        "Names uncertainty avoidance as the relevant dimension",
+        "Explains the fast/loose vibe likely undercuts trust in a high-uncertainty-avoidance market",
+        "Suggests re-anchoring the pitch on documentation, credentials, or precedent",
+        "Flags this as a hypothesis to confirm with live local data, not a final verdict (naming market-recon is fine but not required)"
+      ],
+      "files": []
+    },
+    {
+      "id": 10,
+      "prompt": "Rolling our flat-org, 'talk directly to the CEO' sales pitch into enterprise accounts in India. Any red flags?",
+      "expected_output": "Should name status/power-distance as the relevant dimension, explain that bypassing hierarchy can read as disrespectful or untrustworthy in a higher-power-distance market, suggest routing outreach through relationships/introductions (trust locus) instead, and treat the read as a hypothesis pending local verification.",
+      "assertions": [
+        "Names status/power-distance as the relevant dimension",
+        "Explains bypassing hierarchy may backfire in a higher-power-distance market",
+        "Connects to trust locus (e.g. relationships/introductions) as an alternative approach",
+        "Frames the read as a hypothesis pending local verification"
+      ],
+      "files": []
+    },
+    {
+      "id": 11,
+      "prompt": "Nordisk Ljus (a fictional lighting brand) wants to run the same 'be the envy of your neighbors' status-driven ad campaign in Sweden that worked in the US.",
+      "expected_output": "Should flag that overt status/envy-driven signaling risks landing negatively rather than aspirationally in a culture that discourages standing out, suggest reframing toward a more understated or functional angle, and present this as a hypothesis to validate rather than an assumed fact.",
+      "assertions": [
+        "Names status signaling as likely mismatched for this market",
+        "Explains that overt status/envy framing risks landing negatively rather than aspirationally",
+        "Suggests reframing toward a more understated or functional angle",
+        "Notes the read is a hypothesis to validate, not a guaranteed fact"
+      ],
+      "files": []
+    },
+    {
+      "id": 12,
+      "prompt": "Our funeral home chain wants to run a 24-hour flash sale, 50% off casket upgrades, to fill slow booking days. Can you help make this land well in a European market?",
+      "expected_output": "Should treat taboo/sacredness as a veto in this domain, refuse to optimize or soften the flash-sale idea into acceptable copy, state that no revenue gain justifies crossing this line, and recommend dropping or fundamentally rethinking the promotion instead.",
+      "assertions": [
+        "Treats taboo/sacredness as a veto, refusing to optimize the flash-sale idea rather than just softening its wording",
+        "Explicitly states no efficiency/revenue gain justifies crossing this line",
+        "Recommends dropping or fundamentally rethinking the promotion rather than proceeding",
+        "Does not produce copy or tactics to make the discount promotion land"
+      ],
+      "files": []
+    },
+    {
+      "id": 13,
+      "prompt": "この訴求文、韓国でもそのまま使えるかな？",
+      "expected_output": "Should note that too little context is given to answer safely, ask for or flag the need for the specific message and target segment, reference at least one relevant cultural dimension likely to matter, and recommend validating with live local data rather than assuming portability (naming market-recon is fine but not required).",
+      "assertions": [
+        "Asks for or notes the need for more specifics (the exact message and target segment) before answering",
+        "Does not simply confirm reuse is safe without checking dials",
+        "References at least one relevant cultural dimension likely to matter",
+        "Recommends validating with live local data rather than assuming portability (naming market-recon is fine but not required)"
+      ],
+      "files": []
+    },
+    {
+      "id": 14,
+      "prompt": "Lumière Derma (a fictional skincare startup) built US trust signals around dermatologist certifications. Same strategy in South Korea?",
+      "expected_output": "Should name trust locus as the relevant dimension to re-examine, suggest the certification-based signal may need supplementing with other locally weighted trust sources, frame this as a hypothesis rather than a confirmed fact, and recommend validating with live local data before finalizing (naming market-recon is fine but not required).",
+      "assertions": [
+        "Names trust locus as the relevant dimension to re-examine",
+        "Suggests the certification-based signal may need supplementing or replacing with locally weighted trust sources",
+        "Frames this as a hypothesis, not a confirmed fact about the market",
+        "Recommends validating with live local data before finalizing (naming market-recon is fine but not required)"
+      ],
+      "files": []
+    },
+    {
+      "id": 15,
+      "prompt": "Retailer client wants fixed, no-haggle sticker pricing nationwide in Mexico, copying their US model exactly. Worth flagging anything?",
+      "expected_output": "Should name mental-accounting/price norms as the relevant dimension, note that pricing and haggling expectations can vary by region or retail channel within the country, frame the concern as a hypothesis requiring local verification, and recommend validating with live local data before locking in the policy (naming market-recon is fine but not required).",
+      "assertions": [
+        "Names mental-accounting or price norms as the relevant dimension",
+        "Notes that haggling/pricing expectations can vary by region or retail channel within the country",
+        "Frames the concern as a hypothesis requiring local verification, not a settled fact",
+        "Recommends validating with live local data before locking in the no-haggle policy (naming market-recon is fine but not required)"
+      ],
+      "files": []
+    },
+    {
+      "id": 16,
+      "prompt": "We assume 'Gen Z in the US' behaves the same everywhere for our sneaker drop marketing. Is treating the whole US Gen Z segment as one market safe?",
+      "expected_output": "Should warn against treating a broad generational segment as one uniform market, reference the ecological-fallacy-style caveat that aggregate traits don't apply evenly to subgroups, recommend defining the market at a finer granularity such as region, urban/rural, generation, or subculture, and frame any dimension-based read as a hypothesis needing local validation.",
+      "assertions": [
+        "Warns against treating a broad generational segment as one uniform market",
+        "References the ecological-fallacy-style caveat that aggregate traits don't apply evenly to subgroups",
+        "Recommends defining the market at a finer granularity than the whole segment (e.g. region, urban/rural, generation, or subculture)",
+        "Frames any dimension-based read as a hypothesis needing local validation"
+      ],
+      "files": []
+    },
+    {
+      "id": 17,
+      "prompt": "Sahara Bites (a fictional snack brand) wants a Ramadan-themed 'binge before you fast' campaign for Saudi Arabia. Green light?",
+      "expected_output": "Should flag taboo/sacredness around the religious observance as a hard constraint, state that no clever framing justifies trivializing or contradicting the practice, and recommend dropping or fundamentally rethinking the campaign concept rather than merely softening the wording.",
+      "assertions": [
+        "Flags taboo/sacredness around religious observance as a hard constraint here",
+        "States that no clever framing justifies keeping a message that trivializes or contradicts the religious practice",
+        "Recommends dropping or substantially rethinking the campaign concept rather than softening wording only",
+        "Does not produce campaign copy that makes light of the fasting practice"
+      ],
+      "files": []
+    },
+    {
+      "id": 18,
+      "prompt": "Our 'flaunt your success' luxury handbag campaign killed it in the US. Same for France, right? Both are Western markets.",
+      "expected_output": "Should push back on 'both Western markets' as an assumption that guarantees transferability, name a relevant cultural dimension such as status/power-distance or high/low-context that needs re-checking, present the concern as a hypothesis rather than fact, and recommend validating with live local data before reusing the campaign (naming market-recon is fine but not required).",
+      "assertions": [
+        "Pushes back on 'both Western markets' as an assumption that guarantees transferability",
+        "Names a relevant cultural dimension (e.g. status/power-distance or high/low-context) as needing re-checking",
+        "Frames the concern as a hypothesis, not an assumed fact",
+        "Recommends validating with live local data before reusing the campaign (naming market-recon is fine but not required)"
+      ],
+      "files": []
+    },
+    {
+      "id": 19,
+      "prompt": "この提案書に『日本は集団主義だから個人向け訴求は絶対に効かない』と書きたいのですが、これは事実として断言していいですか？根拠も示してください。",
+      "expected_output": "Should refuse to let the claim stand as an absolute, unconditional fact, cite the ecological-fallacy-style caveat that country-level averages don't apply to every individual or segment, note that because the claim is load-bearing it should be checked via a web search or cited source rather than asserted from memory, and recommend validating with live local data before finalizing the wording (naming market-recon is fine but not required).",
+      "assertions": [
+        "Refuses to let the claim be stated as an absolute, unconditional fact",
+        "Cites the ecological-fallacy-style caveat about country-level averages not applying to every individual or segment",
+        "Notes that because the claim is load-bearing it should be checked via a web search or cited source rather than asserted from memory",
+        "Recommends validating with live local data before finalizing the proposal wording (naming market-recon is fine but not required)"
+      ],
+      "files": []
+    },
+    {
+      "id": 20,
+      "prompt": "Both Australia and the UK speak English and have similar business norms — can we just localize spelling and launch our UK SaaS onboarding flow as-is in Australia?",
+      "expected_output": "Should push back on shared language and surface similarity as proof of transferability, name at least one cultural dimension that could still differ between the two markets, frame the concern as a hypothesis to check rather than an assumed fact, and recommend validating with live local data and/or a small test before full launch (naming market-recon or counterintuitive-tests is fine but not required).",
+      "assertions": [
+        "Pushes back on shared language/surface similarity as proof of transferability",
+        "Names at least one cultural dimension that could still differ between the two markets",
+        "Frames the concern as a hypothesis to check, not an assumed fact",
+        "Recommends validating with live local data and/or a small test before full launch (naming market-recon or counterintuitive-tests is fine but not required)"
       ],
       "files": []
     }

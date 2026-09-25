@@ -9,7 +9,7 @@
         "Writes the obvious move, then inverts it on purpose",
         "Generates plausible counterintuitive options",
         "Designs cheap reversible experiments with a pre-defined behavioural metric",
-        "Warns against surveys/focus groups (revealed > stated preference)"
+        "Warns against trusting surveys/focus groups, favoring what people actually do over what they say (the revealed-preference idea, without requiring that exact term)"
       ],
       "files": []
     },
@@ -20,7 +20,223 @@
       "assertions": [
         "Cautions that survey approval is not behaviour",
         "Recommends a small reversible behavioural test before full launch",
-        "References revealed vs stated preference"
+        "Contrasts what people say with what they actually do (the stated vs. revealed preference idea), without requiring those exact words"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Our product roadmap looks exactly like every competitor's — 'add more integrations, add more dashboards.' We want a genuinely different move and a cheap way to check if it actually works before committing engineering time.",
+      "expected_output": "Should name 'add more features/integrations' as the obvious, saturated baseline, then deliberately invert it (e.g., remove features, ship fewer integrations, add friction) and keep the inversions that are plausible under some circumstance. Should propose a small, reversible test (e.g., a single-segment soft launch or fake-door) with a behavioral metric like activation or usage defined before running it, rather than asking customers what they'd prefer.",
+      "assertions": [
+        "Names the 'add more features/integrations' pattern as the obvious baseline to invert",
+        "Generates at least one deliberate inversion (e.g. removing/simplifying, adding friction)",
+        "Proposes a cheap, reversible test (e.g. soft launch, fake-door, one segment) before committing engineering time",
+        "Specifies a behavioral metric to measure, not customer opinions"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Discounting isn't moving units. Try raising the price instead?",
+      "expected_output": "Should affirm that raising price is a legitimate counterintuitive inversion worth testing (it can change the signal), not dismiss it as illogical. Should recommend testing it on a small, reversible basis — a limited segment or short window — with sales/conversion as the measured behavior, rather than rolling it out fully or asking customers if they'd pay more.",
+      "assertions": [
+        "Treats raising the price as a valid inversion to test, not an illogical move to reject",
+        "Recommends testing on a small/limited, reversible basis rather than a full rollout",
+        "Names a behavioral metric such as sales or conversion to measure",
+        "Does not suggest asking customers whether they would pay more instead of testing"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "We run a mid-size restaurant chain. Every competitor is racing to speed up service and add discount combos. Corporate wants 'something bold' for next quarter, but nobody wants to bet the whole chain on an untested idea — we need a way to try a genuinely different direction in a few locations first, then decide with real numbers instead of gut feel or customer comment cards.",
+      "expected_output": "Should write down the obvious competitor move (faster service, discounts) as the baseline, then invert it (e.g. slower, more attentive, pricier experience) and check it's plausible rather than reflexively rejecting it. Should design a small reversible pilot — a handful of stores, a limited time window — and measure actual customer behavior (visits, spend, repeat rate) rather than comment-card sentiment.",
+      "assertions": [
+        "States the obvious competitor move (speed/discounts) as the baseline before inverting",
+        "Proposes a genuine inversion (e.g. slower, pricier, more attentive experience)",
+        "Designs a small, reversible pilot limited to a few locations rather than a full chain rollout",
+        "Measures real customer behavior (visits/spend/repeat) instead of comment-card or survey sentiment"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "地元の工務店です。見積もりページを分かりやすくするために情報を増やそうと思っていますが、他にどんな手がありますか？",
+      "expected_output": "Should flag 'adding more information' as the obvious, already-tried move and propose the opposite — trimming options/information — as a plausible inversion (paradox of choice). Should recommend validating it with a small reversible test (e.g. showing the simplified version to one segment) and measuring actual inquiry/quote-acceptance behavior rather than asking customers if they like it.",
+      "assertions": [
+        "Identifies adding more information as the obvious move being challenged",
+        "Suggests reducing/simplifying information as a plausible inversion (the paradox-of-choice idea — fewer options/less info can convert better — naming the theory is not required)",
+        "Recommends a small, reversible test (e.g. one segment) rather than changing the page for everyone",
+        "Specifies measuring actual inquiry/quote behavior, not asking for opinions"
+      ],
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Our clinic's patient portal signup rate has been flat for months. The consensus in every meeting is 'add more reassurance copy and patient testimonials to the signup page.' Before we spend another quarter on that, is there a genuinely different angle worth testing, and how would we validate it without risking the whole page?",
+      "expected_output": "Should name 'more reassurance copy/testimonials' as the saturated obvious move, then propose an inversion worth testing (e.g. removing testimonials, cutting steps, adding a small deliberate friction) rather than dismissing it. Should suggest a cheap, reversible A/B or soft launch to one segment, with signup completion defined as the behavioral metric up front, and warn against judging the new version by patient opinions alone.",
+      "assertions": [
+        "Names 'more reassurance copy/testimonials' as the obvious, saturated baseline",
+        "Proposes a genuine inversion (e.g. removing content/steps, adding friction) as worth testing",
+        "Recommends a reversible A/B or soft launch to a segment rather than a full page change",
+        "Defines signup completion (or similar) as the behavioral metric, and cautions against judging by opinions"
+      ],
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "大学の入学課です。出願から入学までの歩留まりを上げたいのですが、定石ではない案を1つ挙げて、本格導入前に安く検証する方法も教えてください。",
+      "expected_output": "Should first state the obvious/logical approach (more information, more encouragement, more follow-up) as the baseline, then generate a genuine inversion (e.g. removing information, adding a small deliberate friction such as a deposit or commitment step) and keep it only if plausible. Should propose a small, reversible test targeting one segment/cohort before a university-wide rollout, measuring actual enrollment/deposit behavior rather than survey interest.",
+      "assertions": [
+        "States the obvious/logical approach as the baseline before inverting",
+        "Generates a genuine inversion (e.g. removing info, adding a commitment/friction step)",
+        "Proposes a small, reversible test on one segment/cohort before full rollout",
+        "Measures actual enrollment/deposit behavior rather than stated interest"
+      ],
+      "files": []
+    },
+    {
+      "id": 9,
+      "prompt": "City transit ridership app. Marketing wants the usual push notifications and discount codes. Give us one thing outside that playbook, tested cheaply first.",
+      "expected_output": "Should identify push notifications/discounts as the obvious marketing playbook, then propose a genuine inversion (e.g. removing a feature/step, introducing scarcity or friction) worth testing. Should recommend a small, reversible pilot on one route or user segment with a predefined behavioral metric (e.g. app opens, ticket purchases) rather than a city-wide rollout.",
+      "assertions": [
+        "Names push notifications/discounts as the obvious playbook being challenged",
+        "Proposes a genuine inversion outside that playbook",
+        "Recommends a small, reversible pilot (one route/segment) rather than city-wide rollout",
+        "Specifies a behavioral metric defined before running the pilot"
+      ],
+      "files": []
+    },
+    {
+      "id": 10,
+      "prompt": "寄付を増やしたい非営利団体です。パンフレットや説明資料を増やす案しか出てきません。何か違う切り口はありますか？",
+      "expected_output": "Should name adding more pamphlets/explanation as the obvious move being challenged, then propose a deliberate inversion (e.g. reducing information, a different ask, adding friction) as a plausible alternative. Should recommend validating it with a small, reversible test on one donor segment, measuring actual donation behavior rather than trusting stated interest in surveys.",
+      "assertions": [
+        "Names adding more pamphlets/explanation as the obvious move being challenged",
+        "Proposes a deliberate inversion (e.g. reducing information or a different ask)",
+        "Recommends a small, reversible test on one segment before a full campaign change",
+        "Specifies measuring actual donation behavior, not stated survey interest"
+      ],
+      "files": []
+    },
+    {
+      "id": 11,
+      "prompt": "our app's onboarding is the same boring 3-step signup every competitor uses lol. got any different ideas we could try without breaking everything?",
+      "expected_output": "Should note the shared 3-step signup as the obvious, saturated pattern, then suggest a deliberate inversion (e.g. adding a step/friction, slowing it down, removing a step) worth trying. Should propose a cheap, reversible A/B test to a slice of users with a completion/retention metric defined up front, rather than rolling the change out to everyone or just asking users what they'd prefer.",
+      "assertions": [
+        "Names the shared 3-step signup as the obvious/saturated baseline",
+        "Suggests a deliberate inversion (e.g. adding friction, removing a step)",
+        "Proposes a reversible A/B test to a slice of users, not a full rollout",
+        "Defines a completion/retention metric up front rather than asking user preference"
+      ],
+      "files": []
+    },
+    {
+      "id": 12,
+      "prompt": "Gym signups are down. Add more perks?",
+      "expected_output": "Should question 'add more perks' as the obvious, already-saturated move rather than accepting it, and offer a counterintuitive inversion to consider (e.g. removing a perk, raising price, adding friction). Should recommend testing it on a small, reversible basis — one location or a limited window — and judging by actual signup behavior, not member opinions.",
+      "assertions": [
+        "Questions 'add more perks' as the saturated obvious move rather than endorsing it outright",
+        "Offers a counterintuitive inversion to consider (e.g. remove a perk, raise price, add friction)",
+        "Recommends a small, reversible test (one location/limited window)",
+        "Ties the decision to actual signup behavior, not member opinions"
+      ],
+      "files": []
+    },
+    {
+      "id": 13,
+      "prompt": "We run a boutique real estate agency in a market saturated with 'we know the neighborhood' and 'we respond fast' messaging from every competitor. We want to try something that sounds risky on paper, but we can only afford to test it on a handful of listings before deciding whether to roll it out agency-wide.",
+      "expected_output": "Should write down the shared 'know the neighborhood / fast response' messaging as the obvious baseline, then generate a plausible inversion (e.g. slower and more deliberate process, charging a fee, hiding information) worth testing. Should design a cheap, reversible test limited to a handful of listings, with a clear behavioral metric (e.g. inquiries, offers, closed deals) defined before running it, rather than deciding from opinion or intuition alone.",
+      "assertions": [
+        "States the shared competitor messaging as the obvious baseline before inverting",
+        "Generates a plausible counterintuitive inversion worth testing",
+        "Limits the test to a handful of listings (small, reversible) before any agency-wide rollout",
+        "Defines a behavioral metric (inquiries/offers/closed deals) before running the test"
+      ],
+      "files": []
+    },
+    {
+      "id": 14,
+      "prompt": "SaaSの解約率が高止まりしています。オンボーディングでもっと丁寧に説明を増やすべきだという意見が社内で強いのですが、それで合っていますか？検証方法も含めて教えてください。",
+      "expected_output": "Should treat 'add more explanation to onboarding' as the obvious move to question rather than confirm outright, and propose an inversion worth testing (e.g. removing/simplifying explanation, adding a different kind of friction). Should recommend a small, reversible test on a limited cohort with churn/retention as the predefined behavioral metric, and caution against deciding based on internal opinion or customer sentiment alone.",
+      "assertions": [
+        "Treats 'add more explanation' as an assumption to question, not confirms it outright",
+        "Proposes a genuine inversion worth testing (e.g. removing/simplifying explanation)",
+        "Recommends a small, reversible test on a limited cohort",
+        "Names churn/retention as the behavioral metric and warns against deciding from opinion alone"
+      ],
+      "files": []
+    },
+    {
+      "id": 15,
+      "prompt": "single-page checkout, same as everyone else. want a different idea and a safe way to try it before we touch the real checkout for good",
+      "expected_output": "Should name the single-page checkout convergence as the obvious baseline, then propose a genuine inversion (e.g. adding a deliberate step, removing an option, hiding the total until later) worth testing. Should recommend a cheap, reversible A/B test on a slice of traffic with a completion/conversion metric set before running it, rather than committing to the change for all traffic.",
+      "assertions": [
+        "Names the single-page checkout convergence as the obvious baseline",
+        "Proposes a genuine inversion (e.g. adding a step, removing an option)",
+        "Recommends a reversible A/B test on a slice of traffic, not a full commit",
+        "Defines a completion/conversion metric before running the test"
+      ],
+      "files": []
+    },
+    {
+      "id": 16,
+      "prompt": "A hospital pharmacy team wants to speed up nurse workflows. Someone suggested A/B testing the removal of the double-check confirmation step before dispensing medication, live, on half the wards for a month, to see if speed improves without more errors. Good test design?",
+      "expected_output": "Should recognize that although 'remove a step' is a classic inversion pattern, this specific case involves patient safety and is not reversible or safe to test this way — an error during the test can't be undone. Should decline to endorse a live A/B test of the safety step and note that the skill's requirement of a cheap, reversible experiment is not met here, suggesting the team look for a safe way to improve speed instead of testing away the safety check.",
+      "assertions": [
+        "Recognizes this is not an appropriate case for the counterintuitive-test approach despite fitting the 'remove a step' pattern",
+        "States the reason: removing a safety/medication check is not reversible or safe to test live",
+        "Declines to recommend running the live A/B test as described",
+        "Does not treat 'sounds counterintuitive' as sufficient justification on its own here"
+      ],
+      "files": []
+    },
+    {
+      "id": 17,
+      "prompt": "Boutique hotel chain. Loyalty program renewal is flat. Ideas?",
+      "expected_output": "Should name the standard loyalty perks/points approach as the obvious baseline, then propose a plausible inversion (e.g. removing a perk, adding a fee, reducing points) worth testing. Should recommend testing it on a small, reversible basis (one property or a limited cohort of members) and measuring actual renewal behavior rather than member survey sentiment.",
+      "assertions": [
+        "Names the standard loyalty perks/points approach as the obvious baseline",
+        "Proposes a plausible counterintuitive inversion to test",
+        "Recommends testing on a small, reversible basis (one property/limited cohort)",
+        "Measures actual renewal behavior rather than survey sentiment"
+      ],
+      "files": []
+    },
+    {
+      "id": 18,
+      "prompt": "Quick question — what sample size and significance threshold should we use for our A/B test so the result is statistically valid?",
+      "expected_output": "Should recognize that detailed sample-size/significance calculation is statistics/test-mechanics rather than this skill's inversion focus, but can still answer it directly and correctly (e.g. a standard significance level, target power, and that sample size depends on baseline rate and minimum detectable effect) rather than declining or treating the question as out of scope. Naming a dedicated ab-testing/statistics resource is fine but not required. Should not force this skill's inversion framing onto the question, and should not fabricate arbitrary numbers with false precision.",
+      "assertions": [
+        "Addresses the question directly with a standard significance level and target power rather than declining or treating it as out of scope",
+        "Does not force this skill's inversion/counterintuitive framework onto an ordinary statistics question (e.g. does not claim a nonstandard threshold is itself the 'counterintuitive' move)",
+        "Uses standard, defensible statistical conventions rather than inventing arbitrary numbers with false precision",
+        "Explains that the required sample size depends on inputs such as the baseline rate and the smallest effect worth detecting, rather than giving one universal number"
+      ],
+      "files": []
+    },
+    {
+      "id": 19,
+      "prompt": "We're thinking about pulling back from broad-reach marketing entirely and pouring the whole budget into our most loyal repeat customers instead — it feels like a bold, unconventional move worth testing. Thoughts?",
+      "expected_output": "Should flag that this specific move — abandoning reach to focus only on loyalists — is one Byron Sharp's How Brands Grow data shows reliably fails, and that this is a case to weigh against that evidence rather than assume cleverness is enough. Should recommend checking the idea against this empirical brake before testing, and should not treat 'sounds counterintuitive' alone as sufficient justification to proceed.",
+      "assertions": [
+        "References the empirical finding that abandoning reach for loyalists reliably underperforms (citing Byron Sharp / How Brands Grow by name is fine but not required)",
+        "Frames this as a case to weigh against that evidence before testing, not just cleverness",
+        "Does not treat 'sounds counterintuitive' alone as sufficient justification to proceed",
+        "Recommends checking against the evidence rather than immediately designing an experiment"
+      ],
+      "files": []
+    },
+    {
+      "id": 20,
+      "prompt": "We run a small assisted-living residence. Every competitor lists full pricing tiers upfront on their website, and inquiry-to-tour conversion is low. What's a genuinely different move worth testing before we decide, given we can only pilot with a few marketing channels?",
+      "expected_output": "Should name showing full pricing tiers upfront as the obvious, competitor-matching move, then propose hiding/delaying the price as a plausible inversion worth testing. Should recommend a small, reversible pilot (e.g. one channel or a limited-time page variant) and measure actual tour-booking/inquiry behavior rather than asking prospective families if they prefer seeing pricing upfront.",
+      "assertions": [
+        "Names showing full pricing upfront as the obvious, competitor-matching move",
+        "Proposes hiding/delaying the price as a plausible counterintuitive inversion",
+        "Recommends a small, reversible pilot (one channel/limited variant) before full rollout",
+        "Measures actual tour-booking/inquiry behavior rather than stated preference"
       ],
       "files": []
     }

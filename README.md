@@ -44,6 +44,17 @@ Each skill's body is in English and includes a **日本語の使用例** (Japane
 
 Claude loads a skill automatically when your request matches its `description`. Ask a normal marketing question — _"the product's fine but nobody converts,"_ _"how do we make this feel premium without dropping the price,"_ _"why don't people trust us,"_ _"the wait-time complaints are killing us"_ — and the relevant skill fires. **psycho-logic** is the entry point and routes to the others.
 
+### Measuring and optimizing the skills
+
+`optimize/` scores or trains one skill against its `evals/evals.json` with [SkillOpt](https://github.com/microsoft/SkillOpt), using your local Claude Code login (`claude -p`). Clone SkillOpt next to this repo and install it editable into `../SkillOpt/.venv` (`pip install -e .` — the base config lives in the checkout), then:
+
+```
+../SkillOpt/.venv/bin/python optimize/train.py reframing --eval   # score the current SKILL.md on all 20 evals
+../SkillOpt/.venv/bin/python optimize/train.py reframing          # train; best_skill.md lands in optimize/runs/reframing/<timestamp>/
+```
+
+Each run makes a few hundred model calls. With 20 evals per skill, scores move by about ±0.03 (soft) between identical runs, so treat `best_skill.md` as a proposal to review, not a drop-in replacement. `market-recon` needs web search, which the scoring harness does not allow, so its scores are not meaningful.
+
 ### Credit & disclaimer
 
 The ideas, frameworks, and examples are drawn from the work of **Rory Sutherland** (Vice Chairman, Ogilvy UK) — chiefly his book _Alchemy: The Dark Art and Curious Science of Creating Magic in Brands, Business, and Life_, his TED talks, and his columns. This is an **unofficial, educational** project and is **not affiliated with or endorsed by** Rory Sutherland or Ogilvy. Read the book — it's better than any skill file.
@@ -84,6 +95,17 @@ Psycho-logic is for making real things better and surfacing real value. Signals 
 ### 仕組み
 
 リクエストがスキルの `description` に一致すると、Claude が自動でそのスキルを読み込みます。普通のマーケティングの相談 — _「商品は良いのに全然売れない」_、_「値下げせずに高級感を出したい」_、_「なぜ信頼されないのか」_、_「待ち時間のクレームがひどい」_ — を投げれば該当スキルが発火します。**psycho-logic** が入口になり、他へ振り分けます。
+
+### スキルの測定と最適化
+
+`optimize/` は [SkillOpt](https://github.com/microsoft/SkillOpt) を使い、各スキルを `evals/evals.json` で採点・学習します。ローカルの Claude Code のログイン（`claude -p`）で動きます。SkillOpt をこのリポジトリの隣に clone して `../SkillOpt/.venv` に編集可能モードでインストール（`pip install -e .`。基本設定は clone 側にあるため）してから:
+
+```
+../SkillOpt/.venv/bin/python optimize/train.py reframing --eval   # 今の SKILL.md を 20 件で採点
+../SkillOpt/.venv/bin/python optimize/train.py reframing          # 学習。best_skill.md は optimize/runs/reframing/<日時>/ に出る
+```
+
+1 回の実行でモデルを数百回呼び出します。1 スキル 20 件だと同じ条件でも点数が ±0.03（soft）ほどぶれるので、`best_skill.md` はそのまま差し替えず、レビューする提案として扱ってください。`market-recon` は Web 検索が前提ですが採点環境では使えないため、点数は参考になりません。
 
 ### クレジットと免責
 

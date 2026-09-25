@@ -24,6 +24,205 @@
         "Does not assume cheaper wins"
       ],
       "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "We're a small SaaS startup competing against an enterprise incumbent. Prospects keep saying we look too small to trust with their data. What should we do?",
+      "expected_output": "Should reframe the problem as a signal-reading problem: prospects are unconsciously judging cost-to-fake, not features. Should propose concrete costly signals — a strong SLA/security guarantee with real penalties, visible sustained investment (certifications, dedicated staff, public track record), and demonstrable over-delivery in the sales process. Should require the signals be genuinely honoured.",
+      "assertions": [
+        "Frames the issue as trust/credibility being read through costly, hard-to-fake signals, not company size",
+        "Proposes a concrete costly signal such as a guarantee/SLA with real penalties",
+        "Mentions visible sustained investment or presence as a signal",
+        "States the signal must be honest / actually honoured"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Our discount store wants to run a flashy national TV ad campaign. Isn't that a waste of money since we compete on low prices?",
+      "expected_output": "Should explain that the ad spend itself is the signal, independent of the ad's content — visible, sustained advertising tells customers the company expects to be around long enough to recoup it and has repeat business, which a fly-by-night competitor couldn't afford. Should note this works alongside a low-price position and isn't the same as raising price.",
+      "assertions": [
+        "Explains that advertising spend itself functions as the signal, not just the message in the ad",
+        "States that only a company expecting longevity/repeat customers could afford this spend",
+        "Does not claim the store must abandon its low-price positioning to use this signal"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "New restaurant, food reviews are great, but people keep asking about hygiene before booking. How do we build that trust?",
+      "expected_output": "Should propose costly, hard-to-fake signals rather than a cheap claim like 'we're clean' — e.g., an open/visible kitchen, published third-party health-inspection results, or a guarantee (free meal / refund if there's an issue). Should note the signal only works if it's honestly tied to real practice.",
+      "assertions": [
+        "Rejects a cheap verbal claim (e.g., just saying 'we're clean') as insufficient signal",
+        "Proposes a concrete costly signal (open kitchen, published inspection results, or a guarantee)",
+        "Requires the signal to reflect real practice / be honest"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "I'm a plumber. My quotes are lower than competitors but people keep hiring the other guy. Should I raise my prices?",
+      "expected_output": "Should raise price-as-signal: for a trust/quality-judgment problem, a low price can itself signal low quality, and raising price plus a costlier-looking presentation could outperform staying cheap. Should recommend testing the price change rather than assuming, referencing behavioural testing.",
+      "assertions": [
+        "Raises the possibility that the low price is signalling low quality rather than good value",
+        "Suggests raising price and/or improving presentation as a possible fix",
+        "Recommends testing the change rather than assuming the outcome"
+      ],
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Our telehealth startup is thinking about offering a money-back guarantee if patients aren't satisfied. Smart move or just a cost we'll regret?",
+      "expected_output": "Should confirm this is a strong costly signal: a guarantee only makes sense to offer if the service actually holds up, so the cost of offering it is itself the proof of quality. Should stress the guarantee must be genuinely honoured, since a guarantee that isn't paid out when claimed destroys the trust it was meant to build.",
+      "assertions": [
+        "Identifies the guarantee as a costly signal precisely because it would be expensive if the service were bad",
+        "States the guarantee must be genuinely honoured / not offered dishonestly",
+        "Does not treat the guarantee as pure marketing copy independent of real cost"
+      ],
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "Our online course has a low completion rate. Should we lean harder into bold claims about our certificate's value in ads?",
+      "expected_output": "Should push back on bold/cheap claims and instead propose a costly, hard-to-fake signal — such as a completion guarantee, visible support effort, or an honest admission of the low completion rate paired with a fix. Should note claims alone ('best certificate') carry no signal.",
+      "assertions": [
+        "States that bold/cheap marketing claims alone carry little signal",
+        "Proposes a concrete costly alternative (e.g., guarantee, visible support, or over-delivery)",
+        "Does not recommend simply amplifying unverified claims"
+      ],
+      "files": []
+    },
+    {
+      "id": 9,
+      "prompt": "Our city's transit agency wants residents to believe a new light-rail line will actually be finished on time. Beyond another press release, what actually works?",
+      "expected_output": "Should note a press release is a cheap, easy-to-fake claim, while visible, sunk, hard-to-reverse actions (ongoing construction the public can see, signed contracts with penalty clauses, published milestones with consequences) function as costly signals because a project that wasn't serious couldn't afford to fake them.",
+      "assertions": [
+        "Identifies a press release as a cheap claim with little signal value",
+        "Proposes a visible, costly, hard-to-fake alternative (e.g., visible construction, contractual penalties, public milestones)",
+        "Ties the signal's credibility to the fact that faking it would be costly/risky"
+      ],
+      "files": []
+    },
+    {
+      "id": 10,
+      "prompt": "Donors doubt that our nonprofit spends money efficiently. We publish an annual report claiming '90% goes to programs,' but donations aren't up. What's missing?",
+      "expected_output": "Should point out the self-reported number is a cheap claim that's easy to fake, and propose a costlier, harder-to-fake signal such as inviting an independent third-party audit or opening finances to public scrutiny. Should tie the signal's credibility to the cost/risk of it being wrong.",
+      "assertions": [
+        "Identifies the self-reported '90%' claim as cheap and easy to fake",
+        "Proposes an independent/third-party verification as a costlier, more credible signal",
+        "Explains why the harder-to-fake version is more believable than the self-reported claim"
+      ],
+      "files": []
+    },
+    {
+      "id": 11,
+      "prompt": "Our app offers a 'lifetime free' plan, but users say it feels too good to be true. How do we make it credible?",
+      "expected_output": "Should explain that a bare claim of 'lifetime free' is cheap to say, and recommend pairing it with a costly, hard-to-fake commitment — such as visible, sustained investment in the product, a public track record, or a guarantee with real consequences if the promise is broken. Should require the promise be genuinely intended.",
+      "assertions": [
+        "Notes that the claim itself is cheap and doesn't prove commitment",
+        "Proposes a costly, hard-to-fake signal to back the claim (e.g., visible investment, guarantee with consequences)",
+        "Requires the underlying promise to be genuine / honestly intended"
+      ],
+      "files": []
+    },
+    {
+      "id": 12,
+      "prompt": "We want to offer a 10-year warranty on our industrial equipment to differentiate from competitors. Is that overkill?",
+      "expected_output": "Should say it's not overkill but a strong costly signal: a warranty that long would bankrupt a company selling low-quality equipment, so offering it proves confidence in the product. Should require the company actually be able to honour it, since the cost is the proof.",
+      "assertions": [
+        "States the long warranty is a credible costly signal rather than overkill",
+        "Explains the warranty is credible because it would be expensive for a low-quality product/liar to offer",
+        "Requires the company to genuinely be able to honour the warranty"
+      ],
+      "files": []
+    },
+    {
+      "id": 13,
+      "prompt": "We want to raise the price of our handbags by 30% because sales have been flat despite good reviews.",
+      "expected_output": "Should raise price-as-signal for Veblen goods: a higher price can increase desirability and even perceived quality, so raising price is a reasonable hypothesis rather than a mistake. Should recommend testing the price increase rather than assuming it will hurt sales, and warn that discounting would likely hurt more than help here.",
+      "assertions": [
+        "Raises price-as-quality-signal / Veblen good reasoning as relevant to this situation",
+        "Recommends testing the price increase rather than assuming the result",
+        "Warns that discounting could undermine desirability in this category"
+      ],
+      "files": []
+    },
+    {
+      "id": 14,
+      "prompt": "新しく開業した美容室です。「安心して任せてください」と言っても全然信じてもらえません。どうしたらいいですか？",
+      "expected_output": "Should explain that the phrase 'trust us' is a cheap claim with no signal value, and propose costly, hard-to-fake alternatives — e.g., a visible guarantee (redo free if unsatisfied), demonstrable technique/effort the customer can see, or sustained visible presence. Should require any such signal be genuinely honoured.",
+      "assertions": [
+        "Identifies the 'trust us' style claim as cheap and lacking signal value",
+        "Proposes a concrete costly signal (e.g., a redo/satisfaction guarantee, visible effort/technique)",
+        "Requires the proposed signal be genuinely honoured"
+      ],
+      "files": []
+    },
+    {
+      "id": 15,
+      "prompt": "うちは中小のIT企業です。「信頼できます」と言っても大手に負けます。広告費をかける意味はありますか？",
+      "expected_output": "Should explain that advertising spend itself functions as a costly signal — a visible, sustained ad presence tells the market the company expects to be around and has repeat business, something a fly-by-night competitor can't afford, independent of the ad's message. Should note this doesn't replace other costly signals like guarantees.",
+      "assertions": [
+        "Explains that ad spend itself is the signal, separate from the ad's content",
+        "Notes only a company expecting longevity/repeat business could sustain that spend",
+        "Does not claim advertising alone fully solves the trust problem without other signals"
+      ],
+      "files": []
+    },
+    {
+      "id": 16,
+      "prompt": "新しく開業したクリニックの院長です。患者さんに「ここなら安心」と思ってもらいたいのですが、パンフレットに「安心・安全」と書くだけでは効果が薄い気がしています。何を変えればいいでしょうか。",
+      "expected_output": "Should agree that printed claims like '安心・安全' are cheap and carry little signal, and propose costly, hard-to-fake alternatives such as a real guarantee/refund policy, visible over-delivery (e.g., longer explanation time, responsiveness), or an honestly admitted limitation once competence is shown. Should require honesty in any signal used.",
+      "assertions": [
+        "States that printed reassurance claims (安心・安全) are cheap and carry little signal",
+        "Proposes a concrete costly signal (e.g., guarantee, visible over-delivery/effort)",
+        "Requires the signal to be honest / tied to real practice"
+      ],
+      "files": []
+    },
+    {
+      "id": 17,
+      "prompt": "高級腕時計を扱っています。価格を上げると売れなくなる気がしますが、本当にそうでしょうか？",
+      "expected_output": "Should raise price-as-signal for Veblen goods: a higher price can increase desirability and perceived quality rather than reduce it, and cutting price could destroy the signal. Should recommend testing the price change rather than assuming lower is safer.",
+      "assertions": [
+        "Raises price-as-quality-signal / Veblen good reasoning",
+        "Warns that lowering price could hurt desirability rather than help",
+        "Recommends testing rather than assuming"
+      ],
+      "files": []
+    },
+    {
+      "id": 18,
+      "prompt": "We want to advertise a '100% money-back guarantee, no questions asked,' but our margins are thin and we don't actually plan to honor most refund requests beyond the bare legal minimum. Can we still get the trust benefit from this?",
+      "expected_output": "Should say no — a costly signal only works because it's genuinely tied to reality; advertising a guarantee you don't intend to honour is fraud, not signaling, and it will be fatal to trust once discovered. Should recommend either genuinely committing to honour the guarantee or not making the claim at all.",
+      "assertions": [
+        "States that this is not a valid costly signal because it isn't honestly tied to reality",
+        "Warns that faking/not honouring the guarantee will backfire badly if discovered",
+        "Recommends either genuinely honouring the guarantee or not making the claim, rather than faking it"
+      ],
+      "files": []
+    },
+    {
+      "id": 19,
+      "prompt": "We're a brand-new supplement company — no reviews, no track record yet. Our marketing team wants to open the campaign by admitting a real flaw in the product to seem more honest and build instant trust. Good idea?",
+      "expected_output": "Should flag that the Pratfall Effect only raises trust when competence is already established; a struggling or unproven brand admitting a flaw just looks weak rather than honest. Should recommend building a credibility signal first (guarantee, visible track record, expertise) before attempting an admitted-flaw move.",
+      "assertions": [
+        "States that admitting a flaw (the Pratfall Effect) only builds trust once competence/credibility is already established",
+        "Warns that an unproven/new brand admitting a flaw now would look weak rather than build trust",
+        "Recommends establishing credibility first before using the admitted-flaw approach"
+      ],
+      "files": []
+    },
+    {
+      "id": 20,
+      "prompt": "Customers say our product is reliable and reasonably priced, and they don't doubt the quality — they just say it doesn't 'speak to them,' like it's not really for people like them. How do we build more trust here?",
+      "expected_output": "Should recognize this isn't a trust/credibility problem (no costly signal is needed since quality already isn't doubted) but a meaning/framing problem — customers don't identify with what the product represents. Should suggest changing what the product means to the customer instead of proposing costly signals like guarantees or price changes.",
+      "assertions": [
+        "Recognizes the issue is not about trust/credibility since quality is already believed",
+        "Identifies the problem as one of meaning/framing rather than costly signaling",
+        "Suggests changing what the product/brand means to the customer (e.g., repositioning, identity, story) rather than proposing a costly signal, guarantee, or price change (naming reframing is fine but not required)"
+      ],
+      "files": []
     }
   ]
 }

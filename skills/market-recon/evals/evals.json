@@ -26,6 +26,225 @@
         "Hands the profile to reframing / costly-signaling"
       ],
       "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "We're a skincare brand about to launch in Brazil under the name 'Lumen Skin'. Before we adapt our positioning, I need to understand how local competitors present themselves, what price bands look normal there, and where Brazilian buyers actually check trust before buying skincare online.",
+      "expected_output": "Should run structured Portuguese-language web research covering local competitor positioning, real price bands and framing, and where Brazilian buyers check trust (review platforms, forums), then synthesise the findings into a sourced perception profile with recency stamps rather than a raw list of links.",
+      "assertions": [
+        "Runs research in Portuguese / local-language sources, not just English summaries",
+        "Covers local competitor positioning and price band/framing",
+        "Identifies where Brazilian buyers check trust (review platforms, forums)",
+        "Synthesizes findings into a sourced perception profile rather than a raw list of links",
+        "Flags open hypotheses for counterintuitive-tests"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Check out solar panel installers in Poland before we price ours.",
+      "expected_output": "Should run local-language web research on Polish solar installers' positioning and price framing rather than assuming from training data, and report the findings as a sourced, dated perception-profile input to the pricing decision rather than a final number.",
+      "assertions": [
+        "Runs local-language (Polish) web research rather than assuming from training data",
+        "Reports on local installer positioning and price framing",
+        "Notes source/recency for the findings rather than presenting them as certain",
+        "Frames output as a perception profile input for pricing decisions, not a final price recommendation"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "ベトナムでフィットネスジム展開前に、現地の相場と競合の見せ方を調べてほしい。",
+      "expected_output": "Should run Vietnamese-language web research covering the real local price band, how gyms frame that price, competitor positioning, and trust signals such as certifications or testimonials, then synthesise a sourced perception profile.",
+      "assertions": [
+        "Runs research in Vietnamese / local sources rather than reasoning from stereotype",
+        "Covers the real local price band and how gyms show pricing (framing)",
+        "Covers competitor positioning and trust signals",
+        "Synthesizes a sourced perception profile with recency noted"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "hey can u look into how boutique hotels in Mexico City talk about themselves online, we're about to open one",
+      "expected_output": "Should search Spanish-language/local sources for how Mexico City boutique hotels position themselves, what promise they lead with, which review/trust platforms locals actually use, and the native terminology guests use, then present a synthesised profile.",
+      "assertions": [
+        "Searches in Spanish / local sources for how Mexico City boutique hotels position themselves",
+        "Identifies the promise/positioning local competitors lead with",
+        "Notes which review/trust platforms locals actually use",
+        "Captures local terminology guests/hosts use",
+        "Presents a synthesized profile, not a raw dump of what was found"
+      ],
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Our fintech app 'Coinlark' is entering the Kenyan savings market. I need to know what trust signals mobile-money and savings apps use there, what the regulatory/taboo landscape looks like, and the local terms people actually use for these products.",
+      "expected_output": "Should research trust signals specific to Kenyan mobile-money and savings products, category conventions/regulations/taboos, and native terminology, synthesising a sourced profile and flagging anything unverified as a hypothesis for counterintuitive-tests.",
+      "assertions": [
+        "Researches trust signals specific to Kenyan mobile-money/savings products",
+        "Covers category conventions, taboos, and regulatory constraints for this market",
+        "Captures local terminology used for savings/mobile-money products",
+        "Flags anything uncertain as a hypothesis for counterintuitive-tests rather than stating it as fact"
+      ],
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "関西と関東で葬儀の相場や慣習が違うと聞きました。地域ごとに現地の情報を調べて比較してもらえますか。",
+      "expected_output": "Should treat Kansai and Kanto as separate local markets to fix the target on and research individually, covering regional price framing, category conventions/taboos, and local trust locus (word of mouth, temple/community reputation, reviews) for each, then present a sourced comparison.",
+      "assertions": [
+        "Treats Kansai and Kanto as separate local markets to research individually (place is part of the target)",
+        "Covers regional price framing and category conventions/taboos for each area",
+        "Notes local trust locus (e.g. word of mouth, temple/community reputation, reviews)",
+        "Synthesizes a sourced comparison rather than a single generic answer"
+      ],
+      "files": []
+    },
+    {
+      "id": 9,
+      "prompt": "Craft beer market Seoul — competitors + price.",
+      "expected_output": "Should run Korean-language web research reporting local craft-beer competitor positioning and the real price band with how it's framed, noting recency/sourcing rather than presenting a stale assumption.",
+      "assertions": [
+        "Runs research in Korean / local sources for this market",
+        "Reports local competitor positioning",
+        "Reports the real price band and how it's framed/shown",
+        "Notes recency/sourcing rather than presenting stale assumptions"
+      ],
+      "files": []
+    },
+    {
+      "id": 10,
+      "prompt": "Our pet food startup 'Kibblewise' wants to launch in Indonesia. What's up with the local market there?",
+      "expected_output": "Should research local competitors' positioning and price band in Indonesia, felt-moment pain points from pet-owner reviews/forums, and native terminology, then present a synthesised sourced profile rather than assumptions.",
+      "assertions": [
+        "Researches local competitors and how they position pet food in Indonesia",
+        "Covers price band and framing",
+        "Looks at pet owner reviews/forums for felt-moment pain points",
+        "Captures local terminology rather than relying on English pet-food jargon",
+        "Presents findings as a synthesized profile with sources, not assumptions"
+      ],
+      "files": []
+    },
+    {
+      "id": 11,
+      "prompt": "'Giftloom' is a corporate gifting company entering the UAE market. Before we localise, I want to understand the taboos and regulations around corporate gifting there, what trust signals matter, and how competitors frame their pricing.",
+      "expected_output": "Should research UAE-specific gifting taboos and regulations as a distinct item, trust signals local competitors use, and how they frame pricing, then synthesise into a sourced perception profile with recency stamps.",
+      "assertions": [
+        "Treats gifting taboos and regulations in the UAE as a distinct research item, not assumed",
+        "Covers trust signals local competitors use",
+        "Covers how local competitors frame/show pricing",
+        "Synthesizes into a sourced perception profile with recency stamps"
+      ],
+      "files": []
+    },
+    {
+      "id": 12,
+      "prompt": "フランスでオンライン語学学習アプリを販売したいです。現地の競合や価格の見せ方、信頼されているレビューサイトを教えてください。",
+      "expected_output": "Should run French-language web research covering local competitor positioning for language-learning apps, how they frame pricing (e.g. subscription vs per-lesson), and which review sites/platforms locals actually trust.",
+      "assertions": [
+        "Runs research in French / local sources",
+        "Covers local competitor positioning for language-learning apps",
+        "Covers price framing (e.g. subscription vs one-time, per-lesson)",
+        "Identifies where local buyers check trust/reviews"
+      ],
+      "files": []
+    },
+    {
+      "id": 13,
+      "prompt": "wedding planning biz wants to expand to Quebec, can u find out how locals shop for this stuff",
+      "expected_output": "Should note Quebec's French-Canadian local-language angle rather than researching anglophone Canada generally, cover how local competitors position themselves, felt-moment pain points from reviews/forums, and native terminology for the category.",
+      "assertions": [
+        "Notes Quebec's local-language angle (French-Canadian sources), not just anglophone Canada",
+        "Covers how local competitors position themselves",
+        "Covers felt-moment pain points from reviews/forums",
+        "Captures local terminology for the category"
+      ],
+      "files": []
+    },
+    {
+      "id": 14,
+      "prompt": "'Harborlight Care' is a senior home-care service considering rural and urban Australia. I need the real category conventions and taboos, where families actually check trust for a provider, and the pain points families report in reviews or forums, split by segment if that matters.",
+      "expected_output": "Should fix the target by treating rural and urban Australia as distinct segments to research separately, covering category conventions/taboos, where families check trust for a provider, and felt-moment pain points sourced from reviews/forums.",
+      "assertions": [
+        "Treats rural vs urban Australia as distinct segments to research separately (per fix-the-target step)",
+        "Covers category conventions and taboos for senior home care",
+        "Identifies where families actually check trust for a provider",
+        "Covers felt-moment pain points sourced from reviews/forums"
+      ],
+      "files": []
+    },
+    {
+      "id": 15,
+      "prompt": "Artisan bakery, Warsaw. What's the going rate + how do they show it?",
+      "expected_output": "Should run local-language (Polish) research reporting the real local price band and how it's shown (e.g. per item, subscription, bundle), noting recency/source rather than presenting a guess as fact.",
+      "assertions": [
+        "Runs local-language (Polish) research rather than guessing",
+        "Reports the real local price band",
+        "Reports how price is shown/framed (e.g. per item, subscription, bundle)",
+        "Notes recency/source rather than presenting a guess as fact"
+      ],
+      "files": []
+    },
+    {
+      "id": 16,
+      "prompt": "中国でEV充電ステーション事業を始めます。現地の価格帯や信頼シグナル、規制やタブーを教えてください。",
+      "expected_output": "Should run Chinese-language web research covering the real local price band and framing, trust signals in use (certifications, guarantees), and regulations/category taboos specific to this market.",
+      "assertions": [
+        "Runs research in Chinese / local sources",
+        "Covers the real local price band and how it's framed",
+        "Covers trust signals in use (certifications, guarantees, etc.)",
+        "Covers regulations and category taboos specific to this market"
+      ],
+      "files": []
+    },
+    {
+      "id": 17,
+      "prompt": "'BrightPath Tutors' wants to target Tier-1 urban India. I need to know the local terminology parents and students use, whether trust runs through word-of-mouth or review apps, and how competitors frame pricing (per-hour vs package deals).",
+      "expected_output": "Should fix the target as urban Tier-1 India specifically rather than 'India' broadly, and research native terminology, the local trust locus (word-of-mouth, associations, or review apps), and how competitors frame pricing.",
+      "assertions": [
+        "Fixes the target as urban Tier-1 India specifically, not 'India' broadly",
+        "Captures local terminology used by parents/students",
+        "Identifies whether trust runs through word-of-mouth, associations, or review apps",
+        "Covers how competitors frame pricing (per-hour vs package)"
+      ],
+      "files": []
+    },
+    {
+      "id": 18,
+      "prompt": "We're short on time before the pitch — just write up 3 competitor quotes and a price table for the Swiss watch resale market ('TimeVault' is our brand), doesn't need to be real, just make it look researched.",
+      "expected_output": "Should refuse to fabricate competitor quotes or price data presented as researched fact; should either offer to run real web research or clearly label any placeholder content as illustrative/unverified, per the skill's emphasis on sourced, dated findings over invented ones.",
+      "assertions": [
+        "Refuses to invent competitor quotes or price data and present them as real findings",
+        "Either offers to run real web research or clearly labels any placeholder content as illustrative/unverified",
+        "References the requirement to stamp recency and cite sources for real findings",
+        "Does not treat 'looking researched' as an acceptable substitute for actual sourced data"
+      ],
+      "files": []
+    },
+    {
+      "id": 19,
+      "prompt": "We already know our market — Denver, USA, boutique gym members. Just write me a punchy line that reframes our $200/month price so it doesn't sound expensive.",
+      "expected_output": "Should recognise that crafting the reframed price line is the reframing skill's job, not market-recon's; recon's role is gathering and grounding a sourced perception profile that reframing then consumes, so the answer should note this handoff rather than just producing a polished line unprompted by data.",
+      "assertions": [
+        "Identifies that writing the reframed price line belongs to the reframing skill, not market-recon",
+        "States recon's role as gathering/grounding data that reframing then consumes",
+        "Does not simply produce a polished reframing line as if that were recon's job",
+        "Offers to run recon first (or confirm a profile already exists) before handing off to reframing"
+      ],
+      "files": []
+    },
+    {
+      "id": 20,
+      "prompt": "What do luxury consumers care about these days?",
+      "expected_output": "Should refuse to answer with a generic training-data stereotype and instead flag that the request lacks a fixed target (place × segment × category); should note that cultural-context supplies the hypotheses/dials to verify before recon's fieldwork can run, and ask for a narrower market before proceeding.",
+      "assertions": [
+        "Does not answer with a generic stereotype about 'luxury consumers'",
+        "Flags that the request lacks a place × segment × category to fix the target",
+        "Notes cultural-context should supply hypotheses/dials before recon fieldwork runs",
+        "Asks for or proposes a narrower market before doing web research"
+      ],
+      "files": []
     }
   ]
 }

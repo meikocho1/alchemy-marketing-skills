@@ -3,6 +3,19 @@
 All notable changes to this project are documented in this file.
 Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versions follow [Semantic Versioning](https://semver.org/).
 
+## [Unreleased]
+
+評価セットを各 20 件に拡充し、[SkillOpt](https://github.com/microsoft/SkillOpt) で Skill を測定・学習する `optimize/` を追加。学習結果のうち人がレビューして妥当と判断した 2 点だけを反映。
+
+### Added
+- `optimize/train.py` + `optimize/config.yaml`: score (`--eval`) or train one skill with SkillOpt. The model under test answers each eval with only that SKILL.md loaded (personal settings excluded); an LLM judge checks every assertion.
+- Evals expanded from 2 to 20 per skill (4 Japanese prompts and 3 boundary cases each).
+
+### Changed
+- `reframing`: new step 0 — check whether the problem is meaning or trust before reframing; hand trust problems to `costly-signaling`. (Proposed by SkillOpt, kept after review.)
+- `psycho-logic`: new step 7 — end with a cheap, reversible next move or a narrowing question, not just a diagnosis. (Proposed by SkillOpt, kept after review.)
+- Eval assertions no longer require naming or handing off to a sibling skill (skills are scored in isolation), and boundary cases no longer penalize answering an out-of-scope question correctly — for every skill except `market-recon`, which is not scored (its evals still assume live web research).
+
 ## [1.2.0] - 2026-07-15
 
 日本語・中国語トリガー追加、著名理論との相互チェック＆リサーチ指示、存在しない外部スキル参照の明示、README のリンク修正と 7 スキル対応。
