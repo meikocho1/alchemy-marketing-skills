@@ -24,6 +24,222 @@
         "Does not reduce the experience to step-count alone"
       ],
       "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "our data sync dashboard just shows a blank spinner for like 2 minutes while it pulls from the warehouse, users think it's frozen and open support tickets. thoughts?",
+      "expected_output": "Should identify the blank spinner as an uncertainty problem rather than a speed problem, and recommend showing status/progress (e.g. connecting, fetching, processing) instead of a bare spinner. Should note this is cheaper than re-architecting the sync pipeline for speed.",
+      "assertions": [
+        "Identifies the blank spinner as an uncertainty problem, not a speed problem",
+        "Recommends showing status/progress instead of just a spinner",
+        "Notes this is cheaper than optimizing the sync pipeline itself",
+        "References occupied vs idle waiting or a similar canonical pattern"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Checkout lines too long. Open more registers?",
+      "expected_output": "Should question whether the real issue is line length or the felt uncertainty/boredom of waiting, and suggest a cheaper fix (wait-time signage, queue visibility) before adding registers.",
+      "assertions": [
+        "Questions whether the issue is line length itself or the felt experience of waiting",
+        "Suggests a lower-cost fix (wait-time signage, queue visibility) before adding staff",
+        "Mentions idle vs occupied time or uncertainty",
+        "Frames the trade-off between the cost of more registers and the cost of the perception fix"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "We're a mid-size restaurant. On busy Friday nights the wait for a table without a reservation can hit 40-45 minutes and guests get visibly frustrated at the host stand. We've thought about hiring another host or expanding the bar seating. Is there something cheaper we can try first?",
+      "expected_output": "Should recommend giving a quoted wait time or pager/SMS updates to remove uncertainty, let guests occupy the wait (e.g. at the bar) instead of standing idle, and apply the peak-end rule to the seating moment. Should contrast this against the cost of hiring or expanding.",
+      "assertions": [
+        "Recommends giving a quoted wait time or pager/SMS updates to remove uncertainty",
+        "Suggests letting guests occupy the wait (e.g. at the bar) rather than stand idle at the host stand",
+        "Applies the peak-end rule to how the seating moment is handled",
+        "Contrasts against the cost of hiring or expanding as the more expensive fix"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Customers hate our 8am-5pm appointment windows for the plumber visit — they say they waste the whole day. Should we hire more techs to shrink the windows?",
+      "expected_output": "Should target the uncertainty within the window (e.g. a live ETA or 'technician is 30 minutes away' notification) rather than only shrinking the window with more staff, noting this can beat hiring on cost.",
+      "assertions": [
+        "Targets uncertainty within the window (e.g. live ETA or notification) rather than only shrinking the window",
+        "Notes this can beat hiring more technicians on cost",
+        "References a status/tracking pattern similar to a visible arrival",
+        "Avoids treating headcount as the first-choice fix"
+      ],
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Patients who get a biopsy done with us often say the days before we call with results are the worst part of the whole process — worse than the procedure itself. Our lab turnaround time is already within clinical standards. What can we realistically change?",
+      "expected_output": "Should identify the uncertainty of not knowing when results arrive as the core problem, separate from lab turnaround time, and recommend a committed communication window or proactive check-in rather than speeding up the lab. Should apply the peak-end rule to how the results call itself is delivered, with an appropriately careful tone.",
+      "assertions": [
+        "Identifies the uncertainty of not knowing when results arrive as the core problem, separate from lab turnaround time",
+        "Recommends a committed communication window or proactive check-in rather than only speeding up the lab",
+        "Applies the peak-end rule to how the results call itself is delivered",
+        "Treats the emotional stakes of this situation appropriately (does not sound flippant)"
+      ],
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "Our university's admissions portal just says 'Under Review' for the entire 6-8 week period. Applicants are flooding us with emails asking for updates. Do we need to speed up the review process?",
+      "expected_output": "Should recommend breaking the single status into visible stages (e.g. materials received, under committee review, decision pending) rather than only shortening the timeline, framing the emails as a symptom of uncertainty and a cheaper fix than compressing review.",
+      "assertions": [
+        "Recommends breaking the single 'Under Review' status into visible stages rather than only shortening the timeline",
+        "Frames the applicant emails as a symptom of uncertainty",
+        "Notes this is cheaper than compressing the review process",
+        "References progress visibility as the mechanism (e.g. status stages, ETA)"
+      ],
+      "files": []
+    },
+    {
+      "id": 9,
+      "prompt": "Small businesses complain to city council about how long building permit approvals take. Council wants to fund more reviewer headcount next budget cycle. What should we check first?",
+      "expected_output": "Should suggest checking whether the complaint is really about duration or about lack of status visibility before committing to headcount funding, recommending a status-tracking mechanism as a cheaper first step and contrasting the costs.",
+      "assertions": [
+        "Suggests checking whether the complaint is about duration or about lack of status visibility before funding headcount",
+        "Recommends a status-tracking mechanism as a cheaper first step",
+        "Explicitly contrasts the cost of new headcount against a visibility fix",
+        "Does not assume the fix is purely to speed up processing"
+      ],
+      "files": []
+    },
+    {
+      "id": 10,
+      "prompt": "Volunteers who sign up on our website often say the process feels 'transactional' and few come back. The signup form itself is short and works fine. Ideas?",
+      "expected_output": "Should apply the peak-end rule to the end of the signup flow rather than editing form mechanics, recommending a warm, memorable confirmation or first moment, and frame the problem as the felt experience rather than the form's length.",
+      "assertions": [
+        "Applies the peak-end rule to the end of the signup flow rather than editing form mechanics",
+        "Recommends engineering a warm, memorable confirmation or first moment",
+        "Frames the problem as the felt experience, not the number of form fields",
+        "Does not suggest shortening the form as the primary fix"
+      ],
+      "files": []
+    },
+    {
+      "id": 11,
+      "prompt": "our workout app onboarding converts fine but people finish their first workout and just... leave. no re-open the next day. what's missing?",
+      "expected_output": "Should apply the peak-end rule to the end of the first workout rather than only onboarding content, recommending a genuinely good closing moment (summary, small delight, encouragement) tied to what gets remembered and retold.",
+      "assertions": [
+        "Applies the peak-end rule to the end of the first workout, not just onboarding steps",
+        "Recommends adding a genuinely good closing moment (e.g. summary, small delight, encouragement)",
+        "Frames the retention drop as an ending problem rather than a features/content gap",
+        "Connects the closing moment to why it matters — being memorable enough to want to return (explicitly saying 'retold'/word-of-mouth is a bonus, not required)"
+      ],
+      "files": []
+    },
+    {
+      "id": 12,
+      "prompt": "Customers are furious that orders placed two weeks ago still show 'Processing' and haven't shipped — turns out our new warehouse management system is silently failing to release a chunk of orders. Complaints are way up. What experience fix helps here?",
+      "expected_output": "Should recognize this as a genuine system failure that must be fixed first, not a perception problem, and should not propose a progress bar or status cosmetics as a substitute for actually shipping the stuck orders.",
+      "assertions": [
+        "Recognizes the underlying warehouse system failure as a real defect that must be fixed first, not just perceived",
+        "Does not propose a progress bar or status cosmetics as a substitute for shipping the stuck orders",
+        "Distinguishes this from a normal uncertainty-reduction case",
+        "If suggesting communication, frames it as secondary to fixing the actual failure"
+      ],
+      "files": []
+    },
+    {
+      "id": 13,
+      "prompt": "A regular customer says our restaurant's chicken sandwich was undercooked twice this month. Should we work on making the wait for their table feel better so they don't focus on it?",
+      "expected_output": "Should reject an experience-design fix here, stating plainly that undercooked food is a food-safety issue that must be fixed at the source (kitchen process, temperature checks), not disguised via a better wait experience.",
+      "assertions": [
+        "Explicitly states this is a food safety issue, not a wait/perception problem",
+        "Recommends fixing the underlying kitchen/food-safety process first",
+        "Rejects using experience design (e.g. a better wait feel) to distract from a safety defect",
+        "Does not recommend peak-end or uncertainty-reduction tactics as the primary answer here"
+      ],
+      "files": []
+    },
+    {
+      "id": 14,
+      "prompt": "Customers keep telling our sales team our $600/month tool is 'too expensive' next to a $50 competitor, even though our onboarding and support experience is smooth. How do we redesign the buying journey to fix this?",
+      "expected_output": "Should recognize the complaint is about price framing/value perception rather than the journey or waiting experience, and address that directly — e.g. how the price is anchored, compared, or justified against the value delivered — rather than forcing a wait-time, uncertainty, or peak-end journey fix onto it. Naming reframing or a similar pricing-psychology concept is fine but not required.",
+      "assertions": [
+        "Identifies the core issue as price framing/value perception (how $600 compares to $50), not the journey or waiting experience",
+        "Addresses how the price is framed, anchored, or compared to the value delivered (e.g. the comparison point, ROI, cost of the cheaper alternative) as the actual fix, not just journey polish",
+        "Does not force a wait-time, uncertainty, occupied-time, or peak-end tactic as the primary fix for the pricing objection",
+        "Answers the question directly and concretely (naming reframing or a similar pricing-psychology concept is fine but not required) rather than declining to answer or declaring it out of scope"
+      ],
+      "files": []
+    },
+    {
+      "id": 15,
+      "prompt": "予約なしで来店したお客様の待ち時間が金曜の夜は40分を超えることがあり、クレームが増えています。スタッフを増やすべきでしょうか？",
+      "expected_output": "Should recommend reducing uncertainty first (a quoted wait time, pager/SMS updates) and occupying the wait (e.g. the bar area) before adding staff, applying the peak-end rule at the seating moment and contrasting the cost against hiring.",
+      "assertions": [
+        "Recommends reducing uncertainty (quoted wait time, pager/SMS) before adding staff",
+        "Suggests occupying the wait rather than leaving guests idle at the host stand",
+        "Applies the peak-end rule to the seating moment",
+        "Frames headcount as the more expensive alternative"
+      ],
+      "files": []
+    },
+    {
+      "id": 16,
+      "prompt": "病院の待合室で、診察までどれくらいかかるか分からず不安になるという声が多いです。診察のスピード自体は標準的です。何を変えればいいですか？",
+      "expected_output": "Should target the uncertainty of not knowing the call time rather than the consultation speed itself, recommending visible status (queue position, estimated time, acknowledgement) as cheaper than speeding up consultations, with an appropriately careful tone.",
+      "assertions": [
+        "Targets the uncertainty of not knowing the call time rather than the consultation speed itself",
+        "Recommends visible status (queue position, estimated time, or acknowledgement)",
+        "Notes this is cheaper than speeding up consultations",
+        "Uses an appropriately careful tone given the healthcare setting"
+      ],
+      "files": []
+    },
+    {
+      "id": 17,
+      "prompt": "ネット通販で配送状況が見えないという問い合わせが多く、配送業者を変えるべきか悩んでいます。",
+      "expected_output": "Should recommend adding visible delivery tracking/status updates as a cheaper first step than switching carriers, tying the fix to uncertainty reduction similar to a package-tracking pattern.",
+      "assertions": [
+        "Recommends visible delivery tracking/status as the first fix rather than switching carriers",
+        "Ties the fix to uncertainty reduction (similar to a package-tracking pattern)",
+        "Frames switching carriers as the more costly alternative",
+        "Does not assume actual delivery speed is the core problem"
+      ],
+      "files": []
+    },
+    {
+      "id": 18,
+      "prompt": "合格発表までの期間、保護者からの問い合わせが殺到しています。審査を早めるのは難しい状況です。",
+      "expected_output": "Should recognize the inquiries stem from uncertainty about timing rather than review speed, recommending a staged status update or a clearly communicated date instead of speeding up review, since the review itself cannot be shortened.",
+      "assertions": [
+        "Recognizes the inquiries stem from uncertainty about timing, not review speed",
+        "Recommends a staged status update or clearly communicated date instead of speeding up review",
+        "Notes this is feasible even though the review process itself cannot be shortened",
+        "Frames the fix as reducing uncertainty rather than changing the review outcome"
+      ],
+      "files": []
+    },
+    {
+      "id": 19,
+      "prompt": "Our fintech app processes wire transfers in 1-2 business days, which is industry standard, but users flood support asking 'is it stuck?' during that window. Should we invest in faster settlement rails?",
+      "expected_output": "Should recommend adding visible transfer status/stages rather than investing in faster settlement rails, framing the support volume as a symptom of uncertainty and contrasting the cost of new infrastructure against a status-visibility fix.",
+      "assertions": [
+        "Recommends adding visible transfer status/stages rather than investing in faster settlement rails",
+        "Frames the support volume as a symptom of uncertainty, not actual speed",
+        "Contrasts the cost of new settlement infrastructure against a status-visibility fix",
+        "References a status-visibility pattern similar to tracking"
+      ],
+      "files": []
+    },
+    {
+      "id": 20,
+      "prompt": "Households complain the days between our movers picking up their stuff and delivering it to the new home feel unbearable, even though our transit times match competitors. What's the cheap fix?",
+      "expected_output": "Should recommend shipment visibility/milestone tracking rather than trying to shorten transit time, suggest occupying the waiting period (e.g. a moving-in checklist), and apply the peak-end rule to delivery day, contrasting this against the cost of speeding up transit.",
+      "assertions": [
+        "Recommends shipment visibility/milestone tracking rather than trying to shorten transit time",
+        "Suggests occupying the waiting period (e.g. a moving-in checklist) rather than leaving it idle",
+        "Applies the peak-end rule to delivery day",
+        "Contrasts against the cost of speeding up actual transit"
+      ],
+      "files": []
     }
   ]
 }

@@ -39,6 +39,7 @@ Work through these in order. The first three reframe the problem; the rest dispa
 
 5. **Prefer the reversible, cheap experiment over the report.** People don't say what they think or do what they say. Don't ask them — change something small and watch behaviour. (See counterintuitive-tests.)
 6. **Sanity-check the ethics.** Psycho-logic should make the real thing better or surface real value, not con people. Signals must be honest; scarcity and urgency must be true. A trick that doesn't survive the customer finding out is a liability, not a tactic.
+7. **End with a move, not just a diagnosis.** Close with a concrete, cheap, reversible next step (a specific test to run, a specific copy/signal change to try) or a sharp clarifying question that narrows which lever applies. A correct diagnosis with no next action isn't finished.
 
 ## The canonical example (use this as your template)
 
