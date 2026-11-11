@@ -239,6 +239,30 @@
         "Measures actual tour-booking/inquiry behavior rather than stated preference"
       ],
       "files": []
+    },
+    {
+      "id": 21,
+      "prompt": "我们做少儿编程培训，同行都在打“免费试听 + 限时折扣”。再这么卷下去没意义，有没有不一样的打法？上线前怎么低成本验证？",
+      "expected_output": "Should name the saturated default, generate at least one idea that inverts it, and specify a cheap, reversible behavioural test on a small segment with a behavioural metric rather than a survey.",
+      "assertions": [
+        "Names the obvious, saturated default (free trial plus discount) before departing from it",
+        "Generates at least one idea that inverts the obvious (e.g. a paid trial, a higher bar to enrol, fewer options)",
+        "Proposes a cheap, reversible behavioural test with a behavioural metric (enrolments, payments) rather than a survey",
+        "Recommends a small pilot or limited segment before a full rollout"
+      ],
+      "files": []
+    },
+    {
+      "id": 22,
+      "prompt": "用户调研里大家都说想要更多功能，可我们每次加功能，活跃度都没什么变化。接下来还该照着调研做吗？",
+      "expected_output": "Should flag that what users say diverges from what they do, should not recommend building more features on the survey alone, and should propose a cheap behavioural experiment (possibly the opposite: hiding or removing features) with a behavioural metric.",
+      "assertions": [
+        "Flags that stated preferences in surveys diverge from actual behaviour",
+        "Does not recommend simply building more features because the survey asks for them",
+        "Proposes a cheap, reversible behavioural experiment (possibly the opposite move, such as hiding or removing features) rather than another survey",
+        "Names the behavioural metric that would decide the result"
+      ],
+      "files": []
     }
   ]
 }

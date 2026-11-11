@@ -2,7 +2,7 @@
 name: counterintuitive-tests
 description: "Generate ideas that don't sound logical, then validate them with cheap behavioural experiments — Rory Sutherland's 'the opposite of a good idea can be a good idea' plus revealed-preference testing. Use when the obvious/logical solution is saturated and the user wants genuinely different options, asks 'what's a creative/unconventional angle', 'how do we stand out', 'should we run a test/experiment', 'how do we know what people actually want', or is about to trust a survey/focus group. Covers deliberate inversion of the obvious move, why stated preferences lie, and designing small reversible experiments that watch behaviour. Inspired by Rory Sutherland's *Alchemy*. Routed to from psycho-logic. 日本語の相談（「競合と同じ案しか出ない」「アンケートは好評なのに売れない」「思い切った案を安く試したい」）にも使う。中文咨询（“只能想出和竞品一样的方案”“问卷好评却卖不动”）也适用。"
 metadata:
-  version: 1.3.0
+  version: 1.4.0
 ---
 
 # Counterintuitive Tests — invert the obvious, then watch behaviour

@@ -17,9 +17,9 @@
     {
       "id": 2,
       "prompt": "how do we make people actually want this? it doesn't make sense but our weird competitor is winning",
-      "expected_output": "Should trigger on casual phrasing. Should invoke 'the opposite of a good idea can be a good idea' and 'doesn't have to make sense to work.' Should diagnose in human terms and route — likely to counterintuitive-tests and/or costly-signaling. Should encourage a cheap behavioural test over reasoning about it.",
+      "expected_output": "Should answer the casual phrasing substantively rather than ask for a formal restatement. Should invoke 'the opposite of a good idea can be a good idea' and 'doesn't have to make sense to work.' Should diagnose in human terms and route — likely to counterintuitive-tests and/or costly-signaling. Should encourage a cheap behavioural test over reasoning about it.",
       "assertions": [
-        "Triggers on casual, illogical-framed phrasing",
+        "Takes the casually worded, 'it doesn't make sense' request at face value and answers it substantively, rather than only asking the user to restate it",
         "Invokes the core thesis (opposite of a good idea / doesn't have to make sense)",
         "Diagnoses a specific psychological cause (e.g., saturation, distrust) and applies or names the matching move (counterintuitive-tests and/or costly-signaling) — naming the skill is fine but not required",
         "Favors a cheap behavioural test over pure reasoning"
@@ -240,6 +240,42 @@
         "Does not force a psychological reframing or route to reframing/costly-signaling/counterintuitive-tests/experience-design",
         "States or implies psychology is not the applicable lever here (economics/law is)",
         "Does not suggest changing how the price is perceived as a way to win the bid"
+      ],
+      "files": []
+    },
+    {
+      "id": 21,
+      "prompt": "Our 'lowest price, no frills, decide in 60 seconds' campaign doubled sign-ups at home in the US. We ran the same campaign translated word for word in Japan for a month and sign-ups barely moved. Should we just discount harder there?",
+      "expected_output": "Should recognise that the market itself is the variable: a move that worked at home can be read differently in another country, so the first job is to establish how Japanese buyers read the low-price and speed signals before choosing any move (Step 0). Should not default to a deeper discount. Should offer a plausible hypothesis about the local reading (e.g. cheap and fast reading as risky or careless where uncertainty avoidance is high) while treating it as a hypothesis to check against live local evidence or a small local test, not as a fact about 'the Japanese'. Should end with a concrete next step.",
+      "assertions": [
+        "Identifies that the same campaign can be read differently in the new market, and treats establishing how that market reads the signal as the first step before choosing a move (naming cultural-context is fine but not required)",
+        "Does not recommend a deeper discount as the fix",
+        "Offers a specific hypothesis about how the low-price / fast-decision signal is read locally, framed as a hypothesis rather than a national stereotype stated as fact",
+        "Recommends checking that hypothesis against live local evidence or a small local test before rolling out a change (naming market-recon or counterintuitive-tests is fine but not required)"
+      ],
+      "files": []
+    },
+    {
+      "id": 22,
+      "prompt": "我们做企业报销软件，试用过的客户评价都不错，可签约率一直在 5% 左右徘徊。销售总监想再打折，产品经理想再加功能。你怎么看？",
+      "expected_output": "Should restate the problem in human terms (buyers like the product but the purchase does not feel justified or safe) instead of a price or feature gap. Should flag discounting and adding features as the expensive default every competitor reaches for. Should diagnose a specific psychological cause and apply a matching move, then end with a cheap, reversible next step.",
+      "assertions": [
+        "Restates the low close rate in human/perceptual terms (e.g. the purchase does not feel justified or safe) rather than as a price or feature gap",
+        "Flags further discounting and adding features as the expensive, saturated default rather than recommending either outright",
+        "Diagnoses a specific psychological cause (meaning, trust, or saturation) and applies or names a matching move — naming the skill is fine but not required",
+        "Ends with a concrete, cheap, reversible next step or a narrowing question"
+      ],
+      "files": []
+    },
+    {
+      "id": 23,
+      "prompt": "我们是刚成立两年的装修公司，报价比同行低一成，客户看完方案却常常选了更贵的那家，说“怕不靠谱”。是不是应该再便宜一点？",
+      "expected_output": "Should diagnose a trust/credibility problem, not a price problem, and note that a lower price can itself read as a warning sign. Should not recommend cutting the price further. Should propose a costly, hard-to-fake signal the firm would really honour.",
+      "assertions": [
+        "Diagnoses the problem as trust/credibility rather than price",
+        "Does not recommend lowering the price further",
+        "Proposes a costly, hard-to-fake signal (e.g. a guarantee, payment held until inspection, visible commitment) rather than more claims — naming costly-signaling is fine but not required",
+        "Notes any signal proposed must be honest and actually honoured"
       ],
       "files": []
     }

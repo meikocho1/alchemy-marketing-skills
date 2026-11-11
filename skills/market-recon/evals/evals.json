@@ -245,6 +245,30 @@
         "Asks for or proposes a narrower market before doing web research"
       ],
       "files": []
+    },
+    {
+      "id": 21,
+      "prompt": "我们打算在印尼卖防晒霜。帮我查一下当地主要竞品现在怎么定价、怎么宣传，消费者更信哪些渠道的评价。",
+      "expected_output": "Should fix the target market, research it through local-language and local sources, cover competitors' positioning, price bands and how prices are shown, and where trust comes from, then synthesise a sourced, dated perception profile and flag what is uncertain.",
+      "assertions": [
+        "Fixes the target market precisely (place, segment, category) or states the assumption used",
+        "Searches local-language / local sources, not just English summaries or memory",
+        "Covers competitors' positioning, price bands and how price is shown, and which review or recommendation channels are trusted",
+        "Cites sources with dates and flags what is uncertain"
+      ],
+      "files": []
+    },
+    {
+      "id": 22,
+      "prompt": "下个月要去德国参展，卖我们的家用储能电池。想知道当地用户选这类产品时最看重哪些认证和口碑来源，别凭印象，帮我查一下。",
+      "expected_output": "Should research the German market through local-language and local sources, identify the trust signals that matter there (certifications, test institutes, review sources), synthesise a perception profile rather than a link dump, and cite and date sources while flagging uncertainty.",
+      "assertions": [
+        "Searches local-language / local sources, not just English summaries or memory",
+        "Identifies the trust signals that matter in that market (e.g. certifications, independent test institutes, review sources)",
+        "Synthesises a perception profile rather than a list of links",
+        "Cites sources with dates and flags what is uncertain"
+      ],
+      "files": []
     }
   ]
 }

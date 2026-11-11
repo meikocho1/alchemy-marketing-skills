@@ -3,3 +3,4 @@
 node_modules/
 optimize/runs/
 __pycache__/
+optimize/cases/

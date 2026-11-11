@@ -2,7 +2,7 @@
 name: cultural-context
 description: "The perception-by-culture lens for psycho-logic — establish HOW a specific region, country, or subculture reads a signal before you send it, because perception is culturally coded and the same move can mean the opposite elsewhere. Use when adapting a product, price, message, or campaign to a new market; when the user asks 'will this work in [country/region]', 'why does this land in X but flop in Y', 'how do people here perceive Z', 'how do we localise/differentiate by region', or is about to copy a US/global playbook into another market. Covers the cultural dimensions that move Sutherland's levers — uncertainty avoidance, individualism/collectivism, status/power distance, high- vs low-context communication, mental-accounting norms, trust locus, and taboo/sacredness — and how each rewires reframing, costly-signaling, and experience-design. Inspired by Rory Sutherland's *Alchemy*. Routed to from psycho-logic; pair with market-recon for live local data. 日本語・中文の相談（「この地域で通用する？」「适合本地市场吗？」）にも使う。"
 metadata:
-  version: 1.3.0
+  version: 1.4.0
 ---
 
 # Cultural Context — perception is coded by where you are

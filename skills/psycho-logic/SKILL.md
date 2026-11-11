@@ -2,7 +2,7 @@
 name: psycho-logic
 description: "Rory Sutherland's 'psycho-logic' approach to marketing, product, and business problems — solve the human perception, not just the engineering or economic metric. Use when the obvious 'logical' fix is expensive, slow, or already done by every competitor; when the user asks 'how do we make people want X', 'the product/price/funnel is fine but nobody converts', 'how do we stand out', 'is there a cheaper way to fix this', or mentions behavioral economics, nudges, irrational behavior, perception, or 'it doesn't make sense but it works'. This is the ROUTER skill: it diagnoses the problem in human terms, then dispatches to reframing, costly-signaling, counterintuitive-tests, or experience-design. Inspired by Rory Sutherland's book *Alchemy*. 日本語の相談（「商品はいいのに売れない」「値下げしかない？」「競合と差別化できない」）にも使う。中文咨询（“产品很好却卖不动”“只能降价吗？”“无法差异化”）也适用。For a catalogue of individual biases, use marketing-psychology (separate plugin) instead."
 metadata:
-  version: 1.3.0
+  version: 1.4.0
 ---
 
 # Psycho-Logic
@@ -23,8 +23,9 @@ Three things to internalise:
 
 ## How to use this skill (the diagnostic loop)
 
-Work through these in order. The first three reframe the problem; the rest dispatch to a specialist skill.
+Work through these in order. Step 0 applies only when the market is in question; steps 1–3 reframe the problem; the rest dispatch to a specialist skill.
 
+0. **Establish who and where — when it matters.** If the problem is tied to a specific country, region, generation, or subculture (launching abroad, reusing a campaign in another market, a taboo-heavy category), the same move can mean the opposite there. Say how *that* market reads the signal before you choose a move (**cultural-context**), and check it against live local evidence instead of a stereotype (**market-recon**). Skip this step when the audience is the user's existing market and nothing suggests it reads signals differently.
 1. **State the problem in human terms.** Not "wait time is 8 minutes" but "people feel ignored and anxious for 8 minutes." Not "price is too high" but "the price feels unjustified." The human framing is where the cheap solutions hide.
 2. **Write down the logical solution — then assume it's a trap.** What would every competitor do? (Make it faster / cheaper / add a feature.) That path is expensive and crowded. Note it, then deliberately look elsewhere.
 3. **Pick the lever.** Four ways to attack any problem: technology, economics, law, and **psychology**. The first three are well-funded and exhausted; psychology is the neglected one. Stay in psychology.
@@ -69,4 +70,6 @@ Sanity-check recommendations against these before shipping; if your advice contr
 - **costly-signaling** — why expensive, wasteful, or honest signals build trust and desire
 - **counterintuitive-tests** — invert the obvious and validate with cheap behavioural experiments
 - **experience-design** — fix the psychologically significant moment, not the logically significant metric
+- **cultural-context** — Step 0: how a specific region or subculture reads a signal, before you choose the move
+- **market-recon** — live, sourced fieldwork on the target market, so the moves run on local reality
 - **marketing-psychology** — flat catalogue of named biases, when you want the menu rather than the method (separate plugin — only if installed)

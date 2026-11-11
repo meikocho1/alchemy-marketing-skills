@@ -240,6 +240,30 @@
         "Avoids prescribing a rename/re-anchor/mental-accounting reframe as the main fix"
       ],
       "files": []
+    },
+    {
+      "id": 21,
+      "prompt": "我们做的是一款给老年人用的智能手环，功能没问题，但子女们一听“老人手环”就觉得土，不愿意买来送父母。产品不打算改，有什么办法？",
+      "expected_output": "Should identify the 'device for old people' frame as the cause, not the product. Should propose renaming and/or recategorising (for example as a family-connection or peace-of-mind gift) instead of changing features or price, and keep the new frame true to what the product does.",
+      "assertions": [
+        "Names the current frame ('a device for old people') as the cause of the perception, not the product itself",
+        "Proposes renaming and/or recategorising the product (e.g. as a gift, a family-connection or peace-of-mind item) rather than changing its features",
+        "Avoids recommending a product redesign or a price cut as the main fix",
+        "Keeps the new frame honest about what the product actually does"
+      ],
+      "files": []
+    },
+    {
+      "id": 22,
+      "prompt": "我们卖的是普通的袋泡茶，品质不错但没什么特别的故事，摆在货架上没人注意。包装和配方都不打算大改，怎样让它显得更有价值？",
+      "expected_output": "Should change what the tea means rather than what it is: a different name, category, use occasion or comparison set. Should give at least one concrete reframe and should not invent origin, heritage or health claims.",
+      "assertions": [
+        "Proposes changing what the product means (name, category, use occasion or ritual, comparison set) rather than the product itself",
+        "Gives at least one concrete reframe that could be used as written",
+        "Avoids recommending reformulating the product or cutting the price as the main fix",
+        "Keeps the reframe honest (no invented origin, heritage or health claims)"
+      ],
+      "files": []
     }
   ]
 }

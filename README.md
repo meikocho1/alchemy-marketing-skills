@@ -36,12 +36,13 @@ flowchart LR
         CC[cultural-context] -->|hypotheses| MR[market-recon]
     end
     PL --> moves
+    PL -.->|market in question| research
     research -.->|perception profile| moves
 ```
 
 | Layer | Skill | What it does |
 |---|---|---|
-| Router | [**psycho-logic**](./skills/psycho-logic/SKILL.md) | Diagnoses a problem in human terms, resists the engineer's reflex to fix the metric, and dispatches to one of the four moves below. **Start here.** |
+| Router | [**psycho-logic**](./skills/psycho-logic/SKILL.md) | Diagnoses a problem in human terms, resists the engineer's reflex to fix the metric, and dispatches to one of the four moves below — through the research layer first when the market itself is in question. **Start here.** |
 | Research | [**cultural-context**](./skills/cultural-context/SKILL.md) | The perception-by-culture lens. Establishes how a specific region or subculture reads a signal — uncertainty avoidance, high/low context, trust locus, taboos — before you send it. |
 | Research | [**market-recon**](./skills/market-recon/SKILL.md) | Live fieldwork. Structured web research in the local language — competitors' signals, price bands, trust sources, taboos — synthesised into a perception profile the four moves consume. |
 | Move | [**reframing**](./skills/reframing/SKILL.md) | Change what something _means_ before changing what it _is_ — the cheapest lever. Renaming, recategorising, price / mental-accounting reframes, manufactured value. |
@@ -77,21 +78,40 @@ Claude loads a skill automatically when your request matches its `description`. 
 
 ```
 .claude-plugin/    plugin.json and marketplace.json (plugin + marketplace manifests)
-skills/<name>/     SKILL.md, plus evals/evals.json (20 eval cases per skill)
-optimize/          SkillOpt harness: train.py and config.yaml
+skills/<name>/     SKILL.md, plus evals/evals.json (22–23 eval cases per skill, in English, Japanese and Chinese)
+optimize/          Scoring: plugin_cases.py for `claude plugin eval`; train.py and config.yaml for SkillOpt
 assets/            icon.svg
 ```
 
 ## Measuring and optimizing the skills
 
-`optimize/` scores or trains one skill against its `evals/evals.json` with [SkillOpt](https://github.com/microsoft/SkillOpt), using your local Claude Code login (`claude -p`). Clone SkillOpt next to this repo and install it editable into `../SkillOpt/.venv` (`pip install -e .` — the base config lives in the checkout), then:
+Two harnesses read the same `skills/<name>/evals/evals.json`.
+
+### With and without the plugin — `claude plugin eval`
+
+`optimize/plugin_cases.py` turns the evals into cases for [`claude plugin eval`](https://code.claude.com/docs/en/plugin-evals) (Claude Code 2.1.269 or later). This scores the plugin as installed: Claude sees every skill description and decides for itself whether to load one. Each case also runs with no plugin, so the report shows what the skills add.
 
 ```
-../SkillOpt/.venv/bin/python optimize/train.py reframing --eval   # score the current SKILL.md on all 20 evals
+python3 optimize/plugin_cases.py                                 # writes optimize/cases/ (gitignored)
+claude plugin eval . --eval-dir optimize/cases --model sonnet    # every skill except market-recon
+claude plugin eval . --eval-dir optimize/cases --tag reframing   # one skill; the tags en / ja / zh select a prompt language
+```
+
+- `Δ` is the score with the plugin minus the score without it. A case that scores the same in both arms is not measuring the skill.
+- `fired` and `fired_any` are unscored. They report whether the case's own skill, or any skill of this plugin, was loaded.
+- By default each case runs three times per arm, so a full pass is about 800 agent runs. Bound it with `--runs 1`, `--tag` or `--max-cost-usd`.
+- `market-recon` needs web search, so it is left out unless you name it: run `python3 optimize/plugin_cases.py market-recon`, then add `--tag market-recon --allow-tools WebSearch WebFetch` to the eval command.
+
+### One skill at a time — SkillOpt
+
+`optimize/train.py` scores or trains one skill against its `evals/evals.json` with [SkillOpt](https://github.com/microsoft/SkillOpt), with that `SKILL.md` forced in as the system prompt, using your local Claude Code login (`claude -p`). Clone SkillOpt next to this repo and install it editable into `../SkillOpt/.venv` (`pip install -e .` — the base config lives in the checkout), then:
+
+```
+../SkillOpt/.venv/bin/python optimize/train.py reframing --eval   # score the current SKILL.md on all of its evals
 ../SkillOpt/.venv/bin/python optimize/train.py reframing          # train; best_skill.md lands in optimize/runs/reframing/<timestamp>/
 ```
 
-Each run makes a few hundred model calls. With 20 evals per skill, scores move by about ±0.03 (soft) between identical runs, so treat `best_skill.md` as a proposal to review, not a drop-in replacement. `market-recon` needs web search, which the scoring harness does not allow, so its scores are not meaningful.
+Each run makes a few hundred model calls. Measured at 20 evals per skill, scores moved by about ±0.03 (soft) between identical runs, so treat `best_skill.md` as a proposal to review, not a drop-in replacement. `market-recon` needs web search, which this harness does not allow, so its scores here are not meaningful; score it with `claude plugin eval` instead.
 
 ## Credit & disclaimer
 

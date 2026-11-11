@@ -10,13 +10,13 @@ model:
 env:
   name: alchemy
   split_mode: ratio
-  split_ratio: "2:1:1"          # 20 evals -> 10 train / 5 val / 5 test
+  split_ratio: "2:1:1"          # about half train, a quarter val, a quarter test
   workers: 4
   max_completion_tokens: 4096
 
 train:
   num_epochs: 2
-  batch_size: 10                # the whole train split per step
+  batch_size: 10                # most of the train split per step (11-12 items)
 
 gradient:
   minibatch_size: 6
@@ -28,4 +28,4 @@ optimizer:
   slow_update_samples: 10
 
 evaluation:
-  gate_metric: soft             # 5 val items: hard (all assertions) is too coarse
+  gate_metric: soft             # 5-6 val items: hard (all assertions) is too coarse
