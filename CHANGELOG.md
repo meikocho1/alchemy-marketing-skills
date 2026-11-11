@@ -3,15 +3,21 @@
 All notable changes to this project are documented in this file.
 Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versions follow [Semantic Versioning](https://semver.org/).
 
-## [Unreleased]
+## [1.3.0] - 2026-11-11
 
-評価セットを各 20 件に拡充し、[SkillOpt](https://github.com/microsoft/SkillOpt) で Skill を測定・学習する `optimize/` を追加。学習結果のうち人がレビューして妥当と判断した 2 点だけを反映。
+評価セットを各 20 件に拡充し、[SkillOpt](https://github.com/microsoft/SkillOpt) で Skill を測定・学習する `optimize/` を追加。学習結果のうち人がレビューして妥当と判断した 2 点だけを反映。README を英語・日本語の 2 ファイルに分け、アイコンを追加。
 
 ### Added
+- `assets/icon.svg`: project icon, shown in the README header.
+- `README.ja.md`: the Japanese README, split out of the bilingual `README.md`.
+- README: a diagram of how the router, research layer and four moves fit together, links from the skills table to each `SKILL.md`, and a repository layout section.
 - `optimize/train.py` + `optimize/config.yaml`: score (`--eval`) or train one skill with SkillOpt. The model under test answers each eval with only that SKILL.md loaded (personal settings excluded); an LLM judge checks every assertion.
 - Evals expanded from 2 to 20 per skill (4 Japanese prompts and 3 boundary cases each).
 
 ### Changed
+- `README.md` is now English only, with a language switch to `README.ja.md`. No content was removed.
+- `metadata.version` in every `SKILL.md` follows the plugin version (1.3.0).
+- `marketplace.json`: dropped `metadata.repository`, an unknown field that `claude plugin validate` warned about and Claude Code ignores.
 - `reframing`: new step 0 — check whether the problem is meaning or trust before reframing; hand trust problems to `costly-signaling`. (Proposed by SkillOpt, kept after review.)
 - `psycho-logic`: new step 7 — end with a cheap, reversible next move or a narrowing question, not just a diagnosis. (Proposed by SkillOpt, kept after review.)
 - Eval assertions no longer require naming or handing off to a sibling skill (skills are scored in isolation), and boundary cases no longer penalize answering an out-of-scope question correctly — for every skill except `market-recon`, which is not scored (its evals still assume live web research).
