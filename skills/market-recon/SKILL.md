@@ -2,7 +2,7 @@
 name: market-recon
 description: "The live fieldwork layer for psycho-logic — go look at the actual target market NOW instead of reasoning from your training-data stereotype of it. Use when a psycho-logic move needs grounding in a specific place: the user asks 'what do competitors in [region/country] actually do', 'what's the real price band / norm here', 'how do local leaders position themselves', 'research this market before we localise', 'what signals trust to buyers in X', or is about to launch/adapt in a market you haven't studied. Runs structured web research in the local language — local competitors and their signals, price bands, category conventions, review/trust sources, local terminology, taboos and regulations — and synthesises a compact perception profile the four moves consume. Inspired by Rory Sutherland's *Alchemy*. Routed to from psycho-logic; pair with cultural-context (the lens that tells you what to look for). 日本語・中文の相談（「現地の実態を調べて」「调研当地市场」）にも使う。"
 metadata:
-  version: 1.3.0
+  version: 1.4.0
 ---
 
 # Market Recon — go look, don't assume

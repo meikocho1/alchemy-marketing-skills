@@ -240,6 +240,30 @@
         "Contrasts against the cost of speeding up actual transit"
       ],
       "files": []
+    },
+    {
+      "id": 21,
+      "prompt": "我们外卖平台的平均送达时间其实比竞品快，可用户还是投诉“等得心慌”。要不要再多招些骑手？",
+      "expected_output": "Should locate the problem in the felt experience of waiting (uncertainty, anxiety), not the delivery-time metric. Should not lead with hiring riders. Should recommend removing uncertainty or occupying the wait, and contrast that cheap fix with the cost of more riders.",
+      "assertions": [
+        "Frames the complaint as the felt experience of waiting (uncertainty, anxiety) rather than the delivery-time metric",
+        "Does not recommend hiring more riders as the primary fix",
+        "Recommends reducing uncertainty and/or occupying the wait (e.g. live status, an honest arrival estimate)",
+        "Contrasts the cheap feeling-fix with the expensive headcount-fix"
+      ],
+      "files": []
+    },
+    {
+      "id": 22,
+      "prompt": "我们银行的贷款审批要 5 个工作日，流程合规没法缩短。客户这几天不停打电话问进度，客服快撑不住了。怎么办？",
+      "expected_output": "Should identify uncertainty and lack of visibility during the wait, not the five-day duration, as what drives the calls. Should recommend making progress visible and setting expectations, rather than shortening the process or adding call-centre staff.",
+      "assertions": [
+        "Identifies uncertainty or lack of visibility during the wait, not the five-day duration, as the driver of the calls",
+        "Recommends making progress visible (e.g. stages, proactive updates, an expected date) rather than trying to shorten the process",
+        "Does not recommend adding call-centre headcount as the primary fix",
+        "Notes this is cheaper than adding staff or compressing the approval process"
+      ],
+      "files": []
     }
   ]
 }

@@ -36,12 +36,13 @@ flowchart LR
         CC[cultural-context] -->|仮説| MR[market-recon]
     end
     PL --> moves
+    PL -.->|市場が論点のとき| research
     research -.->|知覚プロファイル| moves
 ```
 
 | 層 | スキル | 役割 |
 |---|---|---|
-| ルーター | [**psycho-logic**](./skills/psycho-logic/SKILL.md) | 問題を人間の言葉で言い換え、「指標を直す」というエンジニアの反射を抑え、下の4つの打ち手へ振り分ける。**まずここから。** |
+| ルーター | [**psycho-logic**](./skills/psycho-logic/SKILL.md) | 問題を人間の言葉で言い換え、「指標を直す」というエンジニアの反射を抑え、下の4つの打ち手へ振り分ける。市場そのものが論点のときは、先にリサーチ層を通す。**まずここから。** |
 | リサーチ | [**cultural-context**](./skills/cultural-context/SKILL.md) | 知覚を文化で読むレンズ。シグナルを送る前に、その地域・サブカルチャーがそれをどう読むか（不確実性回避、ハイ/ローコンテクスト、信頼の所在、タブー）を確立する。 |
 | リサーチ | [**market-recon**](./skills/market-recon/SKILL.md) | 現地のライブ調査。現地語でのWebリサーチ（競合のシグナル・価格帯・信頼の源・タブー）を行い、4つの打ち手が使う「知覚プロファイル」に統合する。 |
 | 打ち手 | [**reframing**](./skills/reframing/SKILL.md) | 中身（_what it is_）より先に「意味」（_what it means_）を変える、最も安いレバー。改名・再カテゴリ化・価格やメンタルアカウンティングの言い換え・価値の演出。 |
@@ -77,21 +78,40 @@ flowchart LR
 
 ```
 .claude-plugin/    plugin.json と marketplace.json（プラグイン／マーケットプレイスのマニフェスト）
-skills/<name>/     SKILL.md と evals/evals.json（1 スキル 20 件の評価ケース）
-optimize/          SkillOpt ハーネス: train.py と config.yaml
+skills/<name>/     SKILL.md と evals/evals.json（1 スキル 22〜23 件の評価ケース。英語・日本語・中国語）
+optimize/          採点用: `claude plugin eval` 向けの plugin_cases.py、SkillOpt 向けの train.py と config.yaml
 assets/            icon.svg
 ```
 
 ## スキルの測定と最適化
 
-`optimize/` は [SkillOpt](https://github.com/microsoft/SkillOpt) を使い、各スキルを `evals/evals.json` で採点・学習します。ローカルの Claude Code のログイン（`claude -p`）で動きます。SkillOpt をこのリポジトリの隣に clone して `../SkillOpt/.venv` に編集可能モードでインストール（`pip install -e .`。基本設定は clone 側にあるため）してから:
+採点の仕組みは 2 つあり、どちらも同じ `skills/<name>/evals/evals.json` を読みます。
+
+### プラグインあり・なしの比較 — `claude plugin eval`
+
+`optimize/plugin_cases.py` は、評価ケースを [`claude plugin eval`](https://code.claude.com/docs/en/plugin-evals)（Claude Code 2.1.269 以降）用の形式に変換します。こちらはインストールした状態のプラグインを採点します。Claude は全スキルの description を見て、読み込むかどうかを自分で判断します。各ケースはプラグインなしでも実行されるので、スキルで何が良くなったかがレポートに出ます。
 
 ```
-../SkillOpt/.venv/bin/python optimize/train.py reframing --eval   # 今の SKILL.md を 20 件で採点
+python3 optimize/plugin_cases.py                                 # optimize/cases/ に出力（gitignore 済み）
+claude plugin eval . --eval-dir optimize/cases --model sonnet    # market-recon 以外の全スキル
+claude plugin eval . --eval-dir optimize/cases --tag reframing   # 1 スキルだけ。en / ja / zh のタグでプロンプトの言語を選べる
+```
+
+- `Δ` は、プラグインありの点数からプラグインなしの点数を引いた値です。両方で同じ点になるケースは、スキルの効果を測れていません。
+- `fired` と `fired_any` は点数に入りません。そのケースのスキル、またはこのプラグインのいずれかのスキルが読み込まれたかを示します。
+- 既定では各ケースを条件ごとに 3 回ずつ実行するため、全件で約 800 回の実行になります。`--runs 1`、`--tag`、`--max-cost-usd` で絞れます。
+- `market-recon` は Web 検索が必要なので、名前を指定したときだけ生成されます。`python3 optimize/plugin_cases.py market-recon` を実行し、eval コマンドに `--tag market-recon --allow-tools WebSearch WebFetch` を足してください。
+
+### スキル単体の採点と学習 — SkillOpt
+
+`optimize/train.py` は [SkillOpt](https://github.com/microsoft/SkillOpt) を使い、スキル 1 つを `evals/evals.json` で採点・学習します。その `SKILL.md` をシステムプロンプトとして強制的に読ませる方式で、ローカルの Claude Code のログイン（`claude -p`）で動きます。SkillOpt をこのリポジトリの隣に clone して `../SkillOpt/.venv` に編集可能モードでインストール（`pip install -e .`。基本設定は clone 側にあるため）してから:
+
+```
+../SkillOpt/.venv/bin/python optimize/train.py reframing --eval   # 今の SKILL.md を全評価ケースで採点
 ../SkillOpt/.venv/bin/python optimize/train.py reframing          # 学習。best_skill.md は optimize/runs/reframing/<日時>/ に出る
 ```
 
-1 回の実行でモデルを数百回呼び出します。1 スキル 20 件だと同じ条件でも点数が ±0.03（soft）ほどぶれるので、`best_skill.md` はそのまま差し替えず、レビューする提案として扱ってください。`market-recon` は Web 検索が前提ですが採点環境では使えないため、点数は参考になりません。
+1 回の実行でモデルを数百回呼び出します。1 スキル 20 件で測ったとき、同じ条件でも点数が ±0.03（soft）ほどぶれました。`best_skill.md` はそのまま差し替えず、レビューする提案として扱ってください。`market-recon` は Web 検索が前提ですが、この採点方式では使えないため、ここでの点数は参考になりません。`market-recon` は `claude plugin eval` のほうで採点してください。
 
 ## クレジットと免責
 

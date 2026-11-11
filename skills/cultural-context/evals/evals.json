@@ -244,6 +244,30 @@
         "Recommends validating with live local data and/or a small test before full launch (naming market-recon or counterintuitive-tests is fine but not required)"
       ],
       "files": []
+    },
+    {
+      "id": 21,
+      "prompt": "我们在上海做得很成功的社区团购打法——靠“团长”拉邻居拼单——想原样搬到新加坡和马来西亚。有什么要注意的？",
+      "expected_output": "Should warn against assuming the playbook transfers unchanged, split the targets into specific markets and segments, name the dimensions that could change how the mechanic is read, treat them as hypotheses, and recommend validating with live local data or a small test.",
+      "assertions": [
+        "Warns against assuming the home-market playbook transfers unchanged, and treats Singapore and Malaysia (or segments within them) as separate markets rather than one",
+        "Names specific cultural or contextual dimensions that could change how the mechanic is read (e.g. where trust sits, neighbour and community ties, housing patterns)",
+        "Frames these as hypotheses to verify rather than facts about the markets",
+        "Recommends validating with live local data and/or a small test before rollout (naming market-recon or counterintuitive-tests is fine but not required)"
+      ],
+      "files": []
+    },
+    {
+      "id": 22,
+      "prompt": "我们在一线城市年轻白领里很火的“一人食”小火锅广告，想直接投到三四线城市的家庭用户。可以吗？",
+      "expected_output": "Should treat lower-tier-city families as a different market from tier-1 young professionals even within one country, name the dimensions that could flip the message's meaning, frame them as hypotheses, and recommend validating before rollout.",
+      "assertions": [
+        "Treats lower-tier-city families as a different market from tier-1 young professionals rather than assuming the message transfers within the same country",
+        "Names specific dimensions that could flip the meaning (e.g. eating alone versus family dining norms, generation, how price or status is read)",
+        "Frames these as hypotheses to verify rather than facts about the region",
+        "Recommends validating with live local data and/or a small test before rollout (naming market-recon or counterintuitive-tests is fine but not required)"
+      ],
+      "files": []
     }
   ]
 }

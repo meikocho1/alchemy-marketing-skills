@@ -3,6 +3,20 @@
 All notable changes to this project are documented in this file.
 Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versions follow [Semantic Versioning](https://semver.org/).
 
+## [1.4.0] - 2026-11-11
+
+`psycho-logic` にリサーチ層への振り分け（Step 0）を追加。`claude plugin eval` でプラグインなしと比べて採点するためのケース生成スクリプトを追加し、中国語の評価を各スキル 2 件追加。
+
+### Added
+- `optimize/plugin_cases.py`: generates `claude plugin eval` cases from every `evals/evals.json`, so the plugin is scored as installed (Claude decides whether to load a skill) against a no-plugin baseline. Each case carries two unscored trigger indicators, `fired` and `fired_any`, and is tagged by skill and prompt language. `market-recon`, which the SkillOpt harness cannot score, runs here with web search granted (`--allow-tools WebSearch WebFetch`).
+- Evals: two Chinese prompts per skill — the descriptions carried Chinese trigger phrases, but no eval was in Chinese — and a `psycho-logic` case for a campaign reused in another country. Each skill now has 22 evals; `psycho-logic` has 23.
+
+### Changed
+- `psycho-logic`: new step 0 — when the problem is tied to a specific market, establish how that market reads the signal (`cultural-context`, `market-recon`) before choosing a move. `cultural-context` already called itself the router's Step 0, but the router never mentioned the research layer. `Related skills` now lists both. README diagram and skills table updated to match.
+
+### Fixed
+- `psycho-logic` eval 2: the assertion "Triggers on casual, illogical-framed phrasing" could not be graded from an answer. It now checks the answer itself; triggering is measured by the `fired` graders instead.
+
 ## [1.3.0] - 2026-11-11
 
 評価セットを各 20 件に拡充し、[SkillOpt](https://github.com/microsoft/SkillOpt) で Skill を測定・学習する `optimize/` を追加。学習結果のうち人がレビューして妥当と判断した 2 点だけを反映。README を英語・日本語の 2 ファイルに分け、アイコンを追加。

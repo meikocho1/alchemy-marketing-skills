@@ -2,7 +2,7 @@
 name: experience-design
 description: "Fix the psychologically significant moment, not the logically significant metric — Rory Sutherland on experience. Use when the outcome is fine but the journey feels bad: complaints about waiting, anxiety, uncertainty, or 'it's technically fast/cheap/correct but people still hate it'; when the user asks 'how do we reduce complaints', 'how do we make waiting/onboarding/checkout feel better', 'people are anxious during X', or is about to spend big to shave a number (wait time, load time, steps) when the real pain is how the moment feels. Covers uncertainty reduction, idle vs occupied waiting, and the peak-end rule. Inspired by Rory Sutherland's *Alchemy*. Routed to from psycho-logic. 日本語の相談（「待ち時間のクレームが多い」「手続きの途中で離脱される」「お客様を不安にさせている」）にも使う。中文咨询（“等待时间投诉多”“办理中途流失”“让客户感到不安”）也适用。"
 metadata:
-  version: 1.3.0
+  version: 1.4.0
 ---
 
 # Experience Design — fix the felt moment, not the metric

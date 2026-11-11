@@ -223,6 +223,28 @@
         "Suggests changing what the product/brand means to the customer (e.g., repositioning, identity, story) rather than proposing a costly signal, guarantee, or price change (naming reframing is fine but not required)"
       ],
       "files": []
+    },
+    {
+      "id": 21,
+      "prompt": "我们是新开的月子中心，宣传册上写满了“专业”“贴心”，可来咨询的家庭还是不放心。到底做什么才能让人相信？",
+      "expected_output": "Should explain that claims anyone can print carry no signal, and that credibility comes from costly, hard-to-fake commitments. Should propose concrete ones and require that they are honest and honoured.",
+      "assertions": [
+        "Explains that cheap claims ('professional', 'caring') carry no signal because anyone can make them",
+        "Proposes concrete costly, hard-to-fake signals (e.g. a real refund or guarantee term, open visits or transparent operations, visible investment)",
+        "Requires the signals to be honest and actually honoured"
+      ],
+      "files": []
+    },
+    {
+      "id": 22,
+      "prompt": "我们的二手车平台想推出“七天无理由退车”，财务说退车成本太高、不划算。这个承诺值得做吗？",
+      "expected_output": "Should treat the return promise as a costly signal of confidence in the cars, whose cost is what makes it credible, rather than only a cost line. Should require that it is honoured in practice.",
+      "assertions": [
+        "Identifies the return promise as a costly, hard-to-fake signal of confidence in the cars, not merely a cost line",
+        "Explains that the cost or risk to the company is what makes the promise credible",
+        "Requires the promise to be honoured in practice rather than hollowed out by fine print"
+      ],
+      "files": []
     }
   ]
 }
