@@ -2,7 +2,7 @@
 name: psycho-logic
 description: "Rory Sutherland's 'psycho-logic' approach to marketing, product, and business problems — solve the human perception, not just the engineering or economic metric. Use when the obvious 'logical' fix is expensive, slow, or already done by every competitor; when the user asks 'how do we make people want X', 'the product/price/funnel is fine but nobody converts', 'how do we stand out', 'is there a cheaper way to fix this', or mentions behavioral economics, nudges, irrational behavior, perception, or 'it doesn't make sense but it works'. This is the ROUTER skill: it diagnoses the problem in human terms, then dispatches to reframing, costly-signaling, counterintuitive-tests, or experience-design. Inspired by Rory Sutherland's book *Alchemy*. 日本語の相談（「商品はいいのに売れない」「値下げしかない？」「競合と差別化できない」）にも使う。中文咨询（“产品很好却卖不动”“只能降价吗？”“无法差异化”）也适用。For a catalogue of individual biases, use marketing-psychology (separate plugin) instead."
 metadata:
-  version: 1.2.0
+  version: 1.3.0
 ---
 
 # Psycho-Logic

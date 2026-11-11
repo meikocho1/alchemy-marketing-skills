@@ -2,7 +2,7 @@
 name: costly-signaling
 description: "Why expensive, wasteful, effortful, or self-deprecating actions build trust and desire — Rory Sutherland on signalling. Use when the problem is credibility or desirability rather than meaning: the user asks 'why don't people trust us', 'how do we look more credible/committed/premium', 'is our guarantee/warranty worth it', 'should we spend on brand advertising', 'how do we justify a higher price', or wonders why a cheaper-looking competitor wins. Covers costly signals (advertising spend, guarantees, over-delivery), price-as-quality-signal (Veblen goods), and the Pratfall Effect (admitting a real flaw to gain trust). Inspired by Rory Sutherland's *Alchemy*. Routed to from psycho-logic. 日本語の相談（「信頼されない」「安心してもらえない」「強気な価格で売りたい」「広告費に意味はある？」）にも使う。中文咨询（“不被信任”“想以高价出售”“广告费有意义吗？”）也适用。"
 metadata:
-  version: 1.2.0
+  version: 1.3.0
 ---
 
 # Costly Signaling — trust is bought with waste

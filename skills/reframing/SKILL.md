@@ -2,7 +2,7 @@
 name: reframing
 description: "Change what something MEANS before you change what it IS — Rory Sutherland's cheapest lever. Use when a product, price, feature, or message is objectively fine but feels cheap, generic, boring, overpriced, or unjustified; when the user says 'how do we make this feel more premium/valuable/exciting', 'people don't get why it's worth it', 'how do we reposition/rename/repackage this', or wants to raise perceived value without changing the product or cutting the price. Covers renaming, recategorising, mental accounting (price framing), creating artificial value, and context-shifting. Inspired by Rory Sutherland's *Alchemy*. Routed to from psycho-logic. 日本語の相談（「高いと言われる」「安っぽく見える」「値下げせずに高級感を出したい」）にも使う。中文咨询（“被说太贵”“显得廉价”“不降价也想显得高级”）也适用。"
 metadata:
-  version: 1.2.0
+  version: 1.3.0
 ---
 
 # Reframing — change the meaning, not the substance
